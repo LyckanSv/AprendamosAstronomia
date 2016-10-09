@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.callejas.cesar.aprendamosastronomia.MainActivity">
+    tools:context="com.callejas.cesar.aprendamosastronomia.MainActivity"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/mainLogo"
+                android:src=""/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/mainTitle"
+                android:layout_below="@id/mainLogo"
+                android:text=""
+                android:textColor=""
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/mainTitle"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <!--<Button
+                    style="@style/buttons"
+                    android:onClick="sitio1"
+                    android:text="@string/titleJoya"
+                    />
+
+                <Button
+                    style="@style/buttons"
+                    android:onClick="sitio2"
+                    android:text="@string/titleAndres"/>
+
+                <Button
+                    style="@style/buttons"
+                    android:onClick="sitio3"
+                    android:text="@string/titleTazumal"/>
+
+                <Button
+                    style="@style/buttons"
+                    android:onClick="sitio4"
+                    android:text="@string/titleCihuatan"/>
+
+                <Button
+                    style="@style/buttons"
+                    android:onClick="sitio5"
+                    android:text="@string/titleBlanca"/>-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
 </RelativeLayout>
