@@ -4,7 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.callejas.cesar.aprendamosastronomia.MainActivity">
+    tools:context="com.callejas.cesar.aprendamosastronomia.MainActivity"
+    android:background="@color/primary_dark">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,8 +29,8 @@
                 android:layout_height="60dp"
                 android:id="@+id/mainTitle"
                 android:layout_below="@id/mainLogo"
-                android:text=" "
-                android:textColor="@color/primary_text"
+                android:text="@string/appMenuTitle"
+                android:textColor="@android:color/white"
                 android:gravity="center"
                 android:textSize="20sp"/>
 
@@ -50,14 +51,26 @@
                     android:paddingRight="5dp">
 
                     <Button
-                        style="@style/buttons"
-                        android:onClick="sitio1"
-                        android:text=" "/>
+                        style="@style/BtnMenu"
+                        android:onClick="sistemaSolar"
+                        android:text="@string/SisSolarMenu"
+                        />
 
                     <Button
-                        style="@style/buttons"
-                        android:onClick="sitio3"
-                        android:text=" "/>
+                        style="@style/BtnMenu"
+                        android:onClick="satelitesGrandes"
+                        android:text="@string/SatelitesMenu"/>
+
+                    <Button
+                        style="@style/BtnMenu"
+                        android:onClick="laLuna"
+                        android:text="@string/LunaMenu"/>
+
+                    <Button
+                        style="@style/BtnMenu"
+                        android:onClick="constelaciones"
+                        android:text="@string/ConstelaMenu"/>
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -67,25 +80,67 @@
                     android:paddingLeft="5dp">
 
                     <Button
-                        style="@style/buttons"
-                        android:onClick="sitio2"
-                        android:text=" "/>
+                        style="@style/BtnMenu"
+                        android:onClick="losPlanetas"
+                        android:text="@string/PlanetasMenu"/>
 
                     <Button
-                        style="@style/buttons"
-                        android:onClick="sitio4"
-                        android:text=" "/>
+                        style="@style/BtnMenu"
+                        android:onClick="elSol"
+                        android:text="@string/ElSolMenu"/>
+
+                    <Button
+                        style="@style/BtnMenu"
+                        android:onClick="lasEstrellas"
+                        android:text="@string/EstrellasMenu"/>
+
+                    <Button
+                        style="@style/BtnMenu"
+                        android:onClick="navesEsp"
+                        android:text="@string/NavesMenu"/>
                 </LinearLayout>
             </LinearLayout>
 
             <Button
-                style="@style/buttons"
-                android:onClick="sitio5"
-                android:text=" "
+                style="@style/BtnMenu"
+                android:onClick="galaxias"
+                android:text="@string/GalaxiaMenu"
                 android:layout_below="@id/botones"
                 android:layout_marginRight="25dp"
                 android:layout_marginLeft="25dp"/>
         </RelativeLayout>
-
     </ScrollView>
 </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

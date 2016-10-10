@@ -27,4 +27,46 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <!--Estilo para los textos -->
+    <style name="Titulo">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">#EFEFEF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="TituloApp">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">#EFEFEF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="texto">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#EFEFEF</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <!--Estilo Botones del menu-->
+    <style name="BtnMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button1_custom</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+
 </resources>
