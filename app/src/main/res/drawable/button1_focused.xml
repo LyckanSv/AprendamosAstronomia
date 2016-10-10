@@ -4,14 +4,14 @@
     <!--Sombra -->
     <item android:top="3dp">
         <shape>
-            <solid android:color="#1B5E20"/>
+            <solid android:color="@color/primary"/>
             <corners android:radius="4dp"/>
         </shape>
     </item>
     <!--contenido-->
     <item android:bottom="3dp">
         <shape>
-            <solid android:color="@color/primary_dark"/>
+            <solid android:color="@color/Focussedbutton1"/>
             <corners android:radius="4dp"/>
         </shape>
     </item>
