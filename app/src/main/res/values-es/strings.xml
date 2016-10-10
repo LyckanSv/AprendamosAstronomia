@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="app_name">Aprendamos Astronomia</string>
+
+        <!-- Titulo y botones -->
+        <string name="appMenuTitle">Aprendamos Astronomía</string>
+
+        <string name="VolverBtn">Anterior</string>
+        <string name="SeguirBtn">Siguiente</string>
+        <string name="GaleriaBtn">Galería</string>
+
+
+        <!-- MenuBotones-->
+        <string name="SisSolarMenu">El Sistema Solar</string>
+        <string name="PlanetasMenu">Los Planetas</string>
+        <string name="SatelitesMenu">Los satélites más grandes del sistema solar</string>
+        <string name="ElSolMenu">El Sol</string>
+        <string name="LunaMenu">La Luna</string>
+        <string name="EstrellasMenu">Las Estrellas</string>
+        <string name="ConstelaMenu">Las Constelaciones</string>
+        <string name="NavesMenu">Naves Espaciales</string>
+        <string name="GalaxiaMenu">Las Galaxias</string>
+
+        <!-- El sistema solar -->
+        <string name="TituloSistemaSol"> El Sistema Solar</string>
+        <string name="QueEsSistemaSol"> ¿Qué es el Sistema Solar?</string>
+    <string name="SistemaSolInfo">El Sistema Solar es el Sol y todo lo que gira en órbita alrededor de él.
+                                Esto incluye los nueve planetas y sus lunas, numerosos asteroides y cometas.
+                                Todos son sostenidos en órbita alrededor del Sol por la fuerte gravedad del Sol.</string>
+
+        <!-- Planetas -->
+        <string name="TituloPlanetas">Los planetas</string>
+    <string name="IntroPlanetas">En el Sistema Solar hay 8 planetas; nuestro planeta es La Tierra, junto a
+                                él existen otros siete planetas más:
+    </string>
+
+        <string name="TituloMercurio">Mercurio</string>
+    <string name="MercurioInfo">Mercurio es el planeta más pequeño del Sistema Solar, y es el que más cerca del Sol se encuentra.
+                            La superficie de este planeta se parece mucho a los "mares" de nuestra Luna, siendo los cráteres también muy abundantes.
+                            Ha comenzado a ser estudiado en detalle a principios del siglo XXI. Mercurio se puede ver a simple vista, aunque a
+                            veces puedes necesitar prismáticos para observarlo.
+    </string>
+
+        <string name="TituloVenus">Venus</string>
+    <string name="VenusInfo">El segundo planeta, Venus, es conocido por brillar intensamente al amanecer o al atardecer,
+                            característica que le ha valido el sobrenombre de "lucero". Es un planeta precioso de observar a simple vista.
+                            Si dispones de un telescopio y consigues apuntarlo con él, descubrirás que puede llegar a mostrar fases, como la Luna.
+                            Este curioso fenómeno se debe a que está más cerca del Sol que la Tierra y por eso la luz del Sol puede iluminarlo
+                            desde diferentes ángulos.
+                            La temperatura de Venus es más alta que la de Mercurio, a pesar de que está más lejos del Sol. Un astrónomo llamado
+                            Carl Sagan descubrió el porqué de este misterio, y así sabemos que esto se debe a la presencia de gases en la atmósfera de
+                            Venus que provoca un gran efecto invernadero, reteniendo el calor que reciben del Sol.
+    </string>
+
+        <string name="TituloTierra">Tierra</string>
+    <string name="TierraInfo">Es una gran bola de roca, un poco achatada en los polos, y que da una vuelta al Sol en 365 días
+                            y casi 6 horas. Más de un 70% de la superficie está cubierta por océanos de agua líquida. La Tierra la habitamos millones y
+                            millones de seres vivos y es el sitio desde el que estamos empezando a conocer el Universo tal como es.
+                            Sólo los astronautas han conseguido ver La Tierra desde el espacio, algunos desde la órbita, a cientos de kilómetros, y otros
+                            desde la Luna, a cientos de miles de kilómetros.
+    </string>
+
+        <string name="TituloMarte">Marte</string>
+    <string name="MarteInfo">Marte está más lejos del Sol que la Tierra, y por eso allí hace más frío. Marte tiene enormes volcanes,
+                            siendo uno de ellos, el Monte Olimpo, el mayor del Sistema Solar. Posee agua congelada en su superficie y bajo tierra,
+                            tal como ha demostrado el robot Fénix (Phoenix). En el futuro es posible que encontremos vida en este planeta. Marte es
+                            visible a simple vista.
+    </string>
+
+        <string name="TituloJupiter">Jupiter</string>
+    <string name="JupiterInfo">Es enorme, como 1.321 veces La Tierra. Aunque el Sol es mucho más grande, claro, como 984 veces Júpiter.
+                            Es un planeta gaseoso y capaz de emitir ondas de radio. La atmósfera de Júpiter es de una complejidad enorme, y su estudio nos
+                            puede ayudar a comprender mucho mejor cómo se producen los fenómenos atmosféricos en la Tierra y el famoso cambio climático.
+                            En la atmósfera de Júpiter se forman tormentas y anticiclones más grandes que todo el planeta Tierra y los vientos alcanzan
+                            velocidades inimaginables.
+                            Lo acompañan más de 60 satélites, siendo los más conocidos Ío, Europa, Ganímedes y Calisto, las cuatro visibles con unos simples
+                            prismáticos, desde La Tierra. Júpiter es perfectamente visible a simple vista.
+    </string>
+
+        <string name="TituloSaturno">Saturno</string>
+    <string name="SaturnoInfo">Saturno siempre llama poderosamente la atención por ese imponente anillo que lo rodea. En realidad no es
+                            un solo anillo, sino que son varios. Estos anillos se compones de millones de trozos de hielo, algunos tan grandes como un
+                            edificio, y otros minúsculos, como una mota de polvo. Si eres capaz de encontrar Saturno en el cielo (es observable a simple vista)
+                            y luego lo apuntas con un telescopio vas a poder contemplar una de las mayores maravillas de la Naturaleza: los anillos de Saturno.
+                            Saturno no es el único planeta con anillos, pero sí es el que posee los más bonitos. Todos los planetas gaseosos tienen sus
+                            anillos, aunque es muy difícil verlos. Y una última curiosidad: al estar compuesto principalmente de gas y ser tan grande comparado
+                            con su masa, Saturno podría flotar en el mar, suponiendo que pudiera caber, claro.
+    </string>
+
+        <string name="TituloUrano">Urano</string>
+    <string name="UranoInfo">Urano es el primer planeta descubierto con un telescopio, por el músico y astrónomo William Herschel en 1781, aunque es
+                            cierto que se puede observar a simple vista y determinadas tribus africanas lo habían observado mucho antes que él.
+                            Todos los planetas giran en torno a un eje, y todos los ejes de todos los planetas están algo inclinados, pero el planeta con el
+                            eje de rotación más inclinado es Urano, con casi 98°.
+    </string>
+
+        <string name="TituloNeptuno">Neptuno</string>
+    <string name="NeptunoInfo">Neptuno es de un precioso color azul intenso y fue el primer planeta descubierto con las Matemáticas. Fue precisamente
+                            Le Verrier uno quienes indicaron, mediante sus cálculos matemáticos, cuál sería su posición en el cielo, para que el astrónomo
+                            Galle lo descubriera en 1846 con un telescopio. En todos los planetas gaseosos hay vientos de fuerza inusitada, y en Neptuno,
+                            al igual que en Júpiter, se forman tormentas del tamaño de planetas enteros. Los científicos piensan que Neptuno pudo haber
+                            cambiado su posición con Urano innumerables veces hace millones de años, por lo que es posible que no siempre haya sido el
+                            planeta más alejado del Sol.
+    </string>
+
+        <!-- Satelites -->
+        <string name="TituloSatelitesSistema">Los satélites más grandes del sistema solar</string>
+        <string name="IntroSatelitesSistema">Los  6 satélites más grandes del sistema solar </string>
+
+        <string name="TituloSatelite1">Ganímedes</string>
+        <string name="IntroSatelite1">Radio: 2631 km \nPlaneta: Júpiter</string>
+    <string name="Satelite1Info"> Es una de las lunas jovianas o galileanas de Júpiter y es el más grande de todo el sistema solar.
+                            Su nombre se debe a un hermoso príncipe troyano, hijo del mismo epónimo Tros (o de Laomedonte, según las fuentes);
+                            Ganimedes se convirtió en el amante de Zeus y en el copero de los dioses. Sobre la etimología de su nombre Robert Graves
+                            (Los mitos griegos) propone ganuesthai + medea, ‘regocijándose en la virilidad’. Este nombre sólo fue popularizado a partir de
+                            la mitad del siglo XX.
+    </string>
+
+        <string name="TituloSatelite2">Titán</string>
+        <string name="IntroSatelite2">Radio: 2575km  \nPlaneta: Saturno </string>
+    <string name="Satelite2Info">Es el más grande de Saturno y fácilmente visible con telescopios de aficionado.
+                            El nombre de "Titán" y los otros siete satélites de Saturno conocidos por John Herschel (hijo de William Herschel) proviene
+                            de su publicación en el año 1847 de sus observaciones sobre Saturno donde sugería los nombres de los titanes, hermanos y hermanas
+                            de Crono (el nombre griego para el dios romano del tiempo Saturno) como un método más efectivo para nombrar a los satélites de
+                            Saturno que hasta entonces se designaban por numerales romanos siguiendo el orden de proximidad al planeta.
+    </string>
+
+        <string name="TituloSatelite3">Calisto</string>
+        <string name="IntroSatelite3">Radio: 2400km \nPlaneta: Júpiter</string>
+    <string name="Satelite3Info">Este satélite recibe su nombre de una de las muchas amantes de Zeus en la mitología griega, donde Calisto
+                            era una ninfa (o, según otras fuentes, hija de Licaón), que estaba asociada con la diosa de la caza Artemisa. El nombre fue
+                            propuesto por el astrónomo Simon Marius poco después del descubrimiento del satélite. Marius atribuyó la sugerencia a Johannes
+                            Kepler. Sin embargo, los nombres de los satélites galileanos cayeron en desuso durante un tiempo considerable y no se volvió a
+                            generalizar su utilización hasta mediados del siglo XX. En gran parte de la literatura astronómica relativamente reciente,
+                            Calisto es citado por su designación de números romanos, Júpiter IV, un sistema introducido por Galileo, o como el
+                            «cuarto satélite de Júpiter»
+    </string>
+
+        <string name="TituloSatelite4">Io</string>
+        <string name="IntroSatelite4">Radio: 1815km \nPlaneta: Júpiter</string>
+    <string name="Satelite4Info">Es la tercera luna joviana o galileana de Júpiter.
+                            Recibe su nombre de Ío, una de las muchas doncellas con las que Zeus se enamoró en la mitología griega.
+    </string>
+
+        <string name="TituloSatelite5">Luna</string>
+        <string name="IntroSatelite5">Radio: 1738 km \nPlaneta: Tierra</string>
+    <string name="Satelite5Info">Es el satélite natural más grande en el Sistema Solar en relación al tamaño de su planeta, un cuarto del
+                            diámetro de la Tierra y 1/81 de su masa, y es el segundo satélite más denso después de Ío. Se encuentra en relación síncrona con
+                            la Tierra, siempre mostrando la misma cara a la Tierra. El hemisferio visible está marcado con oscuros mares lunares de origen
+                            volcánico entre las brillantes montañas antiguas y los destacados astroblemas.
+    </string>
+
+        <string name="TituloSatelite6">Europa</string>
+        <string name="IntroSatelite6">Radio: 1569km \nPlaneta: Júpiter</string>
+    <string name="Satelite6Info">Fue llamado así por Europa, una de las numerosas conquistas amorosas de Zeus en la mitología griega.
+                            Simon Marius sugirió el nombre de "Europa" tras su descubrimiento, pero este nombre, así como el nombre de las otras lunas
+                            galileanas, no fueron de uso común hasta mediados del siglo XX. En gran parte de la literatura astronómica temprana aparece
+                            mencionado por su designación numeral romana, "Júpiter II" o como el "segundo satélite de Júpiter".
+                            Es el más pequeño de las lunas jovianas o galileanas.
+    </string>
+
+        <!-- El Sol -->
+        <string name="TituloSol">El Sol</string>
+        <string name="QueEsSol">¿Qué es el Sol?</string>
+    <string name="ElSolInfo">El Sol es una estrella. Es una enorme esfera de gas caliente que está brillando y girando. Aparece mucho
+                            más grande y más brillante que las otras estrellas porque nosotros estamos muy cerca de él. El Sol es el centro de nuestro sistema
+                            solar. Todos los planetas en nuestro sistema solar, incluyendo la Tierra, giran alrededor del Sol.
+    </string>
+
+        <!--La Luna -->
+        <string name="TituloLuna">La Luna</string>
+        <string name="QueEsLuna">¿Qué es la luna?</string>
+    <string name="LaLunaInfo">La Luna es el satélite de nuestro planeta, la Tierra. Se llama satélite porque gira alrededor nuestro,
+                            y lleva haciéndolo más de cuatro mil millones de años. Pero, ¿de dónde ha salido? Pues algunos astrónomos piensan que una vez
+                            fue una parte de nuestro planeta y otros, que pasaba por aquí y se acercó tanto a la Tierra que la fuerza de la gravedad (esa
+                            fuerza que tiene la Tierra que nos pega a ella como un imán y no deja que salgamos flotando como los astronautas) le atrajo y
+                            no le dejó irse nunca más.
+    </string>
+
+
+        <!-- Las Estrellas -->
+        <string name="TituloEstrellas">Las Estrellas</string>
+        <string name="QueEsEstrella">¿Qué es una estrella?</string>
+    <string name="EstrellasInfo">Una estrella es una enorme esfera de gas muy caliente y brillante. Las estrellas producen su propia luz
+                            y energía mediante un proceso llamado fusión nuclear. La fusión sucede cuando los elementos más ligeros son forzados para
+                            convertirse en elementos más pesados. Cuando esto sucede, una tremenda cantidad de energía es creada causando que la estrella
+                            se caliente y brille. A las estrellas se les encuentra en una variedad de tamaños y colores. Nuestro Sol es una estrella
+                            amarillenta de tamaño promedio. Las estrellas que son más pequeñas que nuestro Sol son rojizas y las que son más grandes que
+                            éste son azules.
+    </string>
+
+
+        <!-- Constelaciones -->
+        <string name="TituloConstelacion">Las Constelaciones</string>
+        <string name="QueSonConstelaciones">¿Qué son las constelaciones?</string>
+    <string name="ConstelacionesInfo">Una constelación es un grupo de estrellas que toma una forma imaginaria en el cielo nocturno.
+                            Son usualmente nombradas en honor a caracteres mitológicos, gente, animales y objetos. En diferentes partes del mundo, la gente
+                            ha inventado diferentes formas para los mismos grupos de estrellas brillantes. Esto es como un juego de conectar puntitos en una
+                            hoja de papel. En el pasado, la creación de imágenes imaginarias de las estrellas fue útil para la navegación en la noche y para
+                            seguir el curso de las estaciones.
+    </string>
+
+        <!-- Naves Espaciales -->
+        <string name="TituloNavesEspaciales">Naves Espaciales</string>
+        <string name="QueSonNavesEspaciales">¿Qué son las naves espaciales? </string>
+    <string name="NavesEspacialesInfo">Las naves espaciales son vehículos diseñados para funcionar más allá de la atmósfera terrestre,
+                            en el espacio exterior. Existen 2 tipos de naves robóticas que son las que no llevan en ellas tripulación y que permanecen por
+                            largo tiempo en el espacio y que son más bien conocidas como satélites y las tripuladas que son las naves que llevan como
+                            pasajeros a los astronautas. Una de las naves espaciales más conocidas es la Orión, la Endeavour o la Magallanes, las cuales
+                            creadas por la NASA y que puede albergar hasta a 6 tripulantes.
+                            Es importante saber que una nave espacial se divide en varias partes, tiene una especie de sistema neurálgico o cerebro que es
+                            la que guarda la información en sus memoria, y permite transmitirla en tiempo real para estar con comunicación con la base en la
+                            tierra, y que pueda ser comandada por los astronautas; además cuenta con unas antenas que son una especie de parabólicas que
+                            emiten las ondas y también está constituida por el cuerpo que es a donde se posan los tripulantes.
+    </string>
+
+
+        <!-- Las Galaxias -->
+        <string name="TituloGalaxias">Las Galaxias</string>
+        <string name="QueSonGalaxias">¿Qué son las galaxias?</string>
+    <string name="GalaxiasInfo">Las galaxias son enormes colecciones de estrellas, polvo y gas. Usualmente contienen de varios millones
+                            a más de un trillón de estrellas y pueden variar en tamaño desde algunos miles a varios cientos de miles de años luz de diámetro.
+                            Hay cientos de billones de galaxias en el Universo. Las galaxias se presentan en muchos diferentes tamaños, formas y brillantez,
+                            y como las estrellas, son encontradas solas, en pares o en grandes grupos llamados cúmulos. Las galaxias están divididas en tres
+                            tipos básicos: espirales, elípticas e irregulares.
+    </string>
+
+</resources>
