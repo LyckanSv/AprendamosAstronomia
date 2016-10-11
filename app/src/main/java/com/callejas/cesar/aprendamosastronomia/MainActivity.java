@@ -61,8 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void satelitesGrandes(View view){
-        Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(2));
+        Intent intent = new Intent(this,View_support1.class);
         startActivity(intent);
     }
 

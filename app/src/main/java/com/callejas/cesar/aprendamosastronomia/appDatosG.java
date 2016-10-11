@@ -11,11 +11,13 @@ public class appDatosG implements Serializable{
     private String contenido;
     private int picture;
 
+
     appDatosG(String nombre, String contenido, int picture){
         this.nombre = nombre;
         this.contenido = contenido;
         this.picture = picture;
         }
+
 
     public String getNombre() {
         return nombre;
@@ -40,4 +42,7 @@ public class appDatosG implements Serializable{
     public void setPicture(int picture) {
         this.picture = picture;
     }
+
+
+
 }
