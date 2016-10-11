@@ -82,7 +82,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginRight="0dp"
             android:layout_marginLeft="0dp"
-            android:onClick="regresar"
+            android:onClick="juego"
             android:text="Juego"
             android:textColor="#ffffff"
             android:drawableEnd="@drawable/ic_arrow_right"
