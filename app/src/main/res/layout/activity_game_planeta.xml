@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_planeta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.callejas.cesar.aprendamosastronomia.GamePlaneta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:orientation="vertical"
+        android:background="@color/deepPurple"
+        android:padding="8dp"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/puntage"
+            android:textSize="40dp"
+            android:text="0"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="#ecf0f1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/puntage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Preguna 1"
+            android:layout_gravity="center"
+            android:textColor="#ecf0f1"
+            android:textSize="20dp"
+            android:id="@+id/numPregunta"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/puntage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Texto de pregunta que desea"
+            android:layout_gravity="center"
+            android:textColor="#ecf0f1"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:id="@+id/pregunta"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton1"
+        android:layout_below="@id/linearLayout"
+        android:paddingTop="10dp"
+        android:onClick="boton1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton2"
+        android:layout_below="@id/boton1"
+        android:paddingTop="10dp"
+        android:onClick="boton2"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton3"
+        android:layout_below="@id/boton2"
+        android:paddingTop="10dp"
+        android:onClick="boton3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton4"
+        android:layout_below="@id/boton3"
+        android:paddingTop="10dp"
+        android:onClick="boton4"
+        />
+
+</RelativeLayout>
