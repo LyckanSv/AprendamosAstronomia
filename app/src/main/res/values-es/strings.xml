@@ -225,4 +225,29 @@
                             tipos básicos: espirales, elípticas e irregulares.
     </string>
 
+    <!--TODO Solor es para la pruebas, se debe de borrar-->
+
+
+    <string name="pregunta1">1</string>
+    <string name="pregunta2">2</string>
+    <string name="pregunta3">3</string>
+    <string name="pregunta4">4</string>
+    <string name="pregunta5">5</string>
+    <string name="pregunta6">6</string>
+    <string name="pregunta7">7</string>
+    <string name="pregunta8">8</string>
+    <string name="pregunta9">9</string>
+    <string name="pregunta10">10</string>
+
+    <string name="respuesta1">1</string>
+    <string name="respuesta2">2</string>
+    <string name="respuesta3">3</string>
+    <string name="respuesta4">4</string>
+    <string name="respuesta5">5</string>
+    <string name="respuesta6">6</string>
+    <string name="respuesta7">7</string>
+    <string name="respuesta8">8</string>
+    <string name="respuesta9">9</string>
+    <string name="respuesta10">10</string>
+
 </resources>
