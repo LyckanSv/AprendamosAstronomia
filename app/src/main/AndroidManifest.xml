@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ViewGral" />
+        <activity android:name=".GamePlaneta" />
         <activity android:name=".View_support1" />
         <activity android:name=".View_support2"></activity>
     </application>
