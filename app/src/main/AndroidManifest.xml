@@ -18,8 +18,8 @@
         </activity>
         <activity android:name=".ViewGral" />
         <activity android:name=".GamePlaneta" />
-        <activity android:name=".View_support1" />
-        <activity android:name=".View_support2"></activity>
+        <activity android:name=".View_satelites" />
+        <activity android:name=".View_planetas" />
     </application>
 
 </manifest>

@@ -23,12 +23,6 @@ public class MainActivity extends AppCompatActivity {
         ingresoDatos = new appDatosG(getString(R.string.tituloSistemaSol),getString(R.string.sistemaSolInfo),R.drawable.universo);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloMercurio),getString(R.string.mercurioInfo),R.drawable.mercurio);
-        datosGenerales.add(ingresoDatos);
-
-        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite1),getString(R.string.satelite1Info),R.drawable.satelites);
-        datosGenerales.add(ingresoDatos);
-
         ingresoDatos = new appDatosG(getString(R.string.tituloSol),getString(R.string.elSolInfo),R.drawable.sun);
         datosGenerales.add(ingresoDatos);
 
@@ -55,50 +49,49 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void losPlanetas(View view){
-        Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(1));
+        Intent intent = new Intent(this,View_planetas.class);
         startActivity(intent);
     }
 
     public void satelitesGrandes(View view){
-        Intent intent = new Intent(this,View_support1.class);
+        Intent intent = new Intent(this,View_satelites.class);
         startActivity(intent);
     }
 
     public void elSol(View view){
         Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(3));
+        intent.putExtra("datos",datosGenerales.get(1));
         startActivity(intent);
     }
 
     public void laLuna(View view){
         Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(4));
+        intent.putExtra("datos",datosGenerales.get(2));
         startActivity(intent);
     }
 
     public void lasEstrellas(View view){
         Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(5));
+        intent.putExtra("datos",datosGenerales.get(3));
         startActivity(intent);
     }
 
     public void constelaciones(View view){
         Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(6));
+        intent.putExtra("datos",datosGenerales.get(4));
         startActivity(intent);
     }
 
     public void navesEsp(View view){
         Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(7));
+        intent.putExtra("datos",datosGenerales.get(5));
         startActivity(intent);
     }
 
 
     public void galaxias(View view){
         Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(8));
+        intent.putExtra("datos",datosGenerales.get(6));
         startActivity(intent);
     }
 

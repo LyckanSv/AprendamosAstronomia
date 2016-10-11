@@ -1,6 +1,5 @@
 package com.callejas.cesar.aprendamosastronomia;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +8,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class View_support1 extends AppCompatActivity {
+public class View_satelites extends AppCompatActivity {
     ArrayList<appDatosG> datosSuppor1 = new ArrayList<>();
     ImageView itemPic;
     TextView  itemTitle, itemContent;
@@ -19,7 +18,7 @@ public class View_support1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_support1);
+        setContentView(R.layout.activity_view_satelites);
 
         agregarSupport();
 
@@ -37,7 +36,6 @@ public class View_support1 extends AppCompatActivity {
 
     public void agregarSupport(){
         appDatosG ingresoDatos;
-        int id = 1;
         ingresoDatos = new appDatosG(getString(R.string.tituloSatelite1),getString(R.string.satelite1Info),R.drawable.satelites);
         datosSuppor1.add(ingresoDatos);
 
@@ -85,18 +83,39 @@ public class View_support1 extends AppCompatActivity {
         } else if(pos==5){
             finish();
         }
-
-
-        /**Intent intent = new Intent(this, View_support2.class);
-        intent.putExtra("datoS",datosSuppor1.get(0));
-        intent.putExtra("datosCom",datosSuppor1);
-        startActivity(intent);**/
     }
 
 
     public void regresar(View view){
-        //Intent intent = new Intent(this, MainActivity.class);
-        //startActivity(intent);
-        finish();
+        if(pos==0){
+            finish();
+        } else if(pos==1){
+            pos=0;
+            itemTitle.setText(datosSuppor1.get(0).getNombre());
+            itemContent.setText(datosSuppor1.get(0).getContenido());
+            itemPic.setImageResource(datosSuppor1.get(0).getPicture());
+        } else if(pos==2){
+            pos=1;
+            itemTitle.setText(datosSuppor1.get(1).getNombre());
+            itemContent.setText(datosSuppor1.get(1).getContenido());
+            itemPic.setImageResource(datosSuppor1.get(1).getPicture());
+        } else if(pos==3){
+            pos=2;
+            itemTitle.setText(datosSuppor1.get(2).getNombre());
+            itemContent.setText(datosSuppor1.get(2).getContenido());
+            itemPic.setImageResource(datosSuppor1.get(2).getPicture());
+        } else if(pos==4){
+            pos=3;
+            itemTitle.setText(datosSuppor1.get(3).getNombre());
+            itemContent.setText(datosSuppor1.get(3).getContenido());
+            itemPic.setImageResource(datosSuppor1.get(3).getPicture());
+        } else if(pos==5){
+            pos=4;
+            itemTitle.setText(datosSuppor1.get(4).getNombre());
+            itemContent.setText(datosSuppor1.get(4).getContenido());
+            itemPic.setImageResource(datosSuppor1.get(4).getPicture());
+        }
+
+
     }
 }

@@ -263,6 +263,7 @@ public class GamePlaneta extends AppCompatActivity {
         if (numeroPreguntas == 10){
             Intent intent = new Intent(GamePlaneta.this, MainActivity.class);
             startActivity(intent);
+
         }
     }
 
