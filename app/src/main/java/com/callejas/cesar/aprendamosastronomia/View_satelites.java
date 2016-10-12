@@ -36,22 +36,22 @@ public class View_satelites extends AppCompatActivity {
 
     public void agregarSupport(){
         appDatosG ingresoDatos;
-        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite1),getString(R.string.satelite1Info),R.drawable.satelites);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite1),getString(R.string.satelite1Info),R.drawable.ganymede);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite2),getString(R.string.satelite2Info),R.drawable.satelites);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite2),getString(R.string.satelite2Info),R.drawable.titan);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite3),getString(R.string.satelite3Info),R.drawable.satelites);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite3),getString(R.string.satelite3Info),R.drawable.callisto);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite4),getString(R.string.satelite4Info),R.drawable.satelites);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite4),getString(R.string.satelite4Info),R.drawable.io);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite5),getString(R.string.satelite5Info),R.drawable.satelites);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite5),getString(R.string.satelite5Info),R.drawable.themoon);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite6),getString(R.string.satelite6Info),R.drawable.satelites);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSatelite6),getString(R.string.satelite6Info),R.drawable.europa);
         datosSuppor1.add(ingresoDatos);
     }
     public void continuar(View view){

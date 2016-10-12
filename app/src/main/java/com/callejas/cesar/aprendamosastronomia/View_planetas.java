@@ -34,28 +34,28 @@ public class View_planetas extends AppCompatActivity {
 
     public void agregarSupport(){
         appDatosG ingresoDatos;
-        ingresoDatos = new appDatosG(getString(R.string.tituloMercurio),getString(R.string.mercurioInfo),R.drawable.mercurio);
+        ingresoDatos = new appDatosG(getString(R.string.tituloMercurio),getString(R.string.mercurioInfo),R.drawable.mercurionew);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloVenus),getString(R.string.venusInfo),R.drawable.venus);
+        ingresoDatos = new appDatosG(getString(R.string.tituloVenus),getString(R.string.venusInfo),R.drawable.venusnew);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloTierra),getString(R.string.tierraInfo),R.drawable.tierra);
+        ingresoDatos = new appDatosG(getString(R.string.tituloTierra),getString(R.string.tierraInfo),R.drawable.tierranew);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloMarte),getString(R.string.marteInfo),R.drawable.martes);
+        ingresoDatos = new appDatosG(getString(R.string.tituloMarte),getString(R.string.marteInfo),R.drawable.martenew);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloJupiter),getString(R.string.jupiterInfo),R.drawable.jupiter);
+        ingresoDatos = new appDatosG(getString(R.string.tituloJupiter),getString(R.string.jupiterInfo),R.drawable.jupiternew);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloSaturno),getString(R.string.saturnoInfo),R.drawable.venus);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSaturno),getString(R.string.saturnoInfo),R.drawable.saturnonew);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloUrano),getString(R.string.uranoInfo),R.drawable.urano);
+        ingresoDatos = new appDatosG(getString(R.string.tituloUrano),getString(R.string.uranoInfo),R.drawable.uranonew);
         datosSuppor1.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloNeptuno),getString(R.string.neptunoInfo),R.drawable.neptuno);
+        ingresoDatos = new appDatosG(getString(R.string.tituloNeptuno),getString(R.string.neptunoInfo),R.drawable.neptunonew);
         datosSuppor1.add(ingresoDatos);
     }
 

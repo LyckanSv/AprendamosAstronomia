@@ -42,6 +42,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/itemName"
                     style="@style/Titulo"
+                    android:textSize="30sp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"/>
 
@@ -50,6 +51,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/itemContent"
                     style="@style/texto"
+                    android:textSize="20sp"
                     android:paddingBottom="30dp"/>
 
             </LinearLayout>
@@ -73,7 +75,6 @@
             android:onClick="continuar"
             android:text="@string/SeguirBtn"
             android:drawableEnd="@drawable/ic_arrow_right"
-
             />
 
     </LinearLayout>

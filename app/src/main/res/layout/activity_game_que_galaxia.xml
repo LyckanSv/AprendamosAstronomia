@@ -62,6 +62,11 @@
             android:scaleType="fitCenter"
             />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="30dp">
 
         <Button
             style="@style/buttons"
@@ -87,5 +92,6 @@
             android:paddingTop="10dp"
             android:onClick="boton4"
             />
+    </LinearLayout>
     </LinearLayout>
 </ScrollView>

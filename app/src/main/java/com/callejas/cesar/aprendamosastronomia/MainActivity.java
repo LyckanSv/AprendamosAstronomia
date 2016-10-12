@@ -20,25 +20,25 @@ public class MainActivity extends AppCompatActivity {
 
     public void agregarDatos(){
         appDatosG ingresoDatos;
-        ingresoDatos = new appDatosG(getString(R.string.tituloSistemaSol),getString(R.string.sistemaSolInfo),R.drawable.universo);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSistemaSol),getString(R.string.sistemaSolInfo),R.drawable.solarsysnew);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloSol),getString(R.string.elSolInfo),R.drawable.sun);
+        ingresoDatos = new appDatosG(getString(R.string.tituloSol),getString(R.string.elSolInfo),R.drawable.sunnew);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloLuna),getString(R.string.laLunaInfo),R.drawable.moon);
+        ingresoDatos = new appDatosG(getString(R.string.tituloLuna),getString(R.string.laLunaInfo),R.drawable.lunanew);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos= new appDatosG(getString(R.string.tituloEstrellas),getString(R.string.estrellasInfo),R.drawable.start);
+        ingresoDatos= new appDatosG(getString(R.string.tituloEstrellas),getString(R.string.estrellasInfo),R.drawable.estrellasnew);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloConstelacion),getString(R.string.constelacionesInfo),R.drawable.constelaciones);
+        ingresoDatos = new appDatosG(getString(R.string.tituloConstelacion),getString(R.string.constelacionesInfo),R.drawable.constelacionesnew);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloNavesEspaciales),getString(R.string.navesEspacialesInfo),R.drawable.nave);
+        ingresoDatos = new appDatosG(getString(R.string.tituloNavesEspaciales),getString(R.string.navesEspacialesInfo),R.drawable.spaceshipsnew);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloGalaxias),getString(R.string.galaxiasInfo),R.drawable.galaxia);
+        ingresoDatos = new appDatosG(getString(R.string.tituloGalaxias),getString(R.string.galaxiasInfo),R.drawable.galaxiaespiral1);
         datosGenerales.add(ingresoDatos);
     }
 

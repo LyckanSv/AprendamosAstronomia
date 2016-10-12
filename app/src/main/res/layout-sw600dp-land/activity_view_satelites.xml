@@ -5,29 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.callejas.cesar.aprendamosastronomia.ViewGral"
-    android:orientation="vertical"
-    android:weightSum="10"
-    android:background="@color/primary"
-    >
+    android:orientation="horizontal"
+    android:background="@color/primary">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/pictureItem"
+        android:scaleType="centerCrop"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/mainContent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/pictureItem"
-            android:scaleType="centerCrop"/>
-
+        android:weightSum="10">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="9">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,6 +39,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/itemName"
                     style="@style/Titulo"
+                    android:textSize="30sp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"/>
 
@@ -50,31 +48,32 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/itemContent"
                     style="@style/texto"
+                    android:textSize="20sp"
                     android:paddingBottom="30dp"/>
+
 
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
 
-        <Button
-            style="@style/backButton2"
-            android:onClick="regresar"
-            android:text="@string/VolverBtn"
-            android:drawableStart="@drawable/ic_arrow_left"
-            />
-        <Button
-            style="@style/backButton2"
-            android:onClick="continuar"
-            android:text="@string/SeguirBtn"
-            android:drawableEnd="@drawable/ic_arrow_right"
-
-            />
+            <Button
+                style="@style/backButton2"
+                android:onClick="regresar"
+                android:text="@string/VolverBtn"
+                android:drawableStart="@drawable/ic_arrow_left"
+                />
+            <Button
+                style="@style/backButton2"
+                android:onClick="continuar"
+                android:text="@string/SeguirBtn"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
