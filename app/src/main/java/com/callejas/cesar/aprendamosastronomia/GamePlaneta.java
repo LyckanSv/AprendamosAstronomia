@@ -269,5 +269,15 @@ public class GamePlaneta extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    @Override
+    public void onPause(){
+        super.onPause();
+        players.pause();
+    }
+    @Override
+    public void onResume(){
+        super.onResume();
+        players.start();
+    }
 
 }

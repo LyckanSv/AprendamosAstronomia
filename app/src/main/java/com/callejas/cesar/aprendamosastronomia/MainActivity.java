@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-<<<<<<< HEAD
+
     public void gamepla(View view){
         Intent intent = new Intent(this,GamePlaneta.class);
         startActivity(intent);
@@ -115,6 +115,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-=======
->>>>>>> refs/remotes/origin/master
+
 }
