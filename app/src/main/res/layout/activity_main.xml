@@ -108,6 +108,11 @@
                     android:onClick="gameGalax"
                     android:text="planetTMP"/>
 
+                <Button
+                    style="@style/BtnMenu"
+                    android:onClick="gamePosPlaneta"
+                    android:text="planeta2game"/>
+
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

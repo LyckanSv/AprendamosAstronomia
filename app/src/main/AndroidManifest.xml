@@ -21,7 +21,8 @@
         <activity android:name=".View_satelites" />
         <activity android:name=".View_planetas" />
         <activity android:name=".GameFasesLuna" />
-        <activity android:name=".GameQueGalaxia"></activity>
+        <activity android:name=".GameQueGalaxia" />
+        <activity android:name=".GamePosPlaneta"></activity>
     </application>
 
 </manifest>
