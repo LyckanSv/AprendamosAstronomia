@@ -6,16 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import java.lang.reflect.Array;
 
 public class GamePlaneta extends AppCompatActivity {
     Button b1, b2, b3, b4;
-    TextView puntaje, numpregunta, pregunta;
-    String preguntas[] = new String[10];
-    String respuestas[] = new String[10];
-    Boolean preguntasRealizadas[] = new Boolean[10];
+    TextView puntaje, numpregunta;
+    ImageView planetPick;
+    int preguntas[] = new int[8];
+    String respuestas[] = new String[8];
+    Boolean preguntasRealizadas[] = new Boolean[8];
     int contadorPuntaje = 0;
     int numeroPreguntas = 0;
     int ids;
@@ -24,13 +25,15 @@ public class GamePlaneta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_planeta);
+
         b1 = (Button) findViewById(R.id.boton1);
         b2 = (Button) findViewById(R.id.boton2);
         b3 = (Button) findViewById(R.id.boton3);
         b4 = (Button) findViewById(R.id.boton4);
+
         puntaje = (TextView) findViewById(R.id.puntage);
         numpregunta = (TextView) findViewById(R.id.numPregunta);
-        pregunta = (TextView) findViewById(R.id.pregunta);
+        planetPick = (ImageView) findViewById(R.id.lunaPic);
         players = MediaPlayer.create(this, R.raw.song);
         wins = MediaPlayer.create(this, R.raw.win);
         over = MediaPlayer.create(this, R.raw.error);
@@ -38,45 +41,42 @@ public class GamePlaneta extends AppCompatActivity {
         players.start();
         arreglos();
         selector();
+        
     }
 
     public void arreglos(){
-        preguntas[0] = getString(R.string.pregunta1);
-        preguntas[1] = getString(R.string.pregunta2);
-        preguntas[2] = getString(R.string.pregunta3);
-        preguntas[3] = getString(R.string.pregunta4);
-        preguntas[4] = getString(R.string.pregunta5);
-        preguntas[5] = getString(R.string.pregunta6);
-        preguntas[6] = getString(R.string.pregunta7);
-        preguntas[7] = getString(R.string.pregunta8);
-        preguntas[8] = getString(R.string.pregunta9);
-        preguntas[9] = getString(R.string.pregunta10);
+        preguntas[0] = R.drawable.gamemercurio;
+        preguntas[1] = R.drawable.gamevenus;
+        preguntas[2] = R.drawable.gametierra;
+        preguntas[3] = R.drawable.gamemartes;
+        preguntas[4] = R.drawable.gamejupiter;
+        preguntas[5] = R.drawable.gamesaturno;
+        preguntas[6] = R.drawable.gameurano;
+        preguntas[7] = R.drawable.gameneptuno;
 
-        respuestas[0] = getString(R.string.respuesta1);
-        respuestas[1] = getString(R.string.respuesta2);
-        respuestas[2] = getString(R.string.respuesta3);
-        respuestas[3] = getString(R.string.respuesta4);
-        respuestas[4] = getString(R.string.respuesta5);
-        respuestas[5] = getString(R.string.respuesta6);
-        respuestas[6] = getString(R.string.respuesta7);
-        respuestas[7] = getString(R.string.respuesta8);
-        respuestas[8] = getString(R.string.respuesta9);
-        respuestas[9] = getString(R.string.respuesta10);
+        respuestas[0] = getString(R.string.resPlaneta1);
+        respuestas[1] = getString(R.string.resPlaneta2);
+        respuestas[2] = getString(R.string.resPlaneta3);
+        respuestas[3] = getString(R.string.resPlaneta4);
+        respuestas[4] = getString(R.string.resPlaneta5);
+        respuestas[5] = getString(R.string.resPlaneta6);
+        respuestas[6] = getString(R.string.resPlaneta7);
+        respuestas[7] = getString(R.string.resPlaneta8);
 
-        for (int i = 0; i < 10 ; i++){
+        for (int i = 0; i < 7; i++){
             preguntasRealizadas[i] = true;
         }
     }
 
     public void selector(){
         double seleccionPregunta = Math.random();
-        for (int i = 0; i <10; i++){
-            if (seleccionPregunta >= (0.1*(i)) && seleccionPregunta < (0.1 * (i+1))){
+        for (int i = 0; i <7; i++){
+            if (seleccionPregunta >= (0.125*(i)) && seleccionPregunta < (0.125 * (i+1))){
                 if( preguntasRealizadas[i]){
                     preguntasRealizadas[i] = false;
                     ids = i;
                     numeroPreguntas += 1;
-                    numpregunta.setText("Pregunta " + String.valueOf(numeroPreguntas));
+
                     constructorPreguntas(preguntas[(i)],respuestas[i]);
                 }
                 else{
@@ -91,50 +91,42 @@ public class GamePlaneta extends AppCompatActivity {
     public String respuestasSeleccion(){
         double seleccionPregunta = Math.random();
 
-
-        if(seleccionPregunta < 0.10){
+        if(seleccionPregunta < 0.125){
             return respuestas[0];
         }
-        else if(seleccionPregunta >0.10 && seleccionPregunta < 0.20){
+        if(seleccionPregunta >=0.125 && seleccionPregunta < 0.25){
             return respuestas[1];
         }
 
-        else if(seleccionPregunta >0.20 && seleccionPregunta < 0.30){
+        if(seleccionPregunta >=0.25 && seleccionPregunta < 0.375){
             return respuestas[2];
         }
 
-        else if(seleccionPregunta >0.30 && seleccionPregunta < 0.40){
+        if(seleccionPregunta >=0.375 && seleccionPregunta < 0.5){
             return respuestas[3];
         }
 
-        else if(seleccionPregunta >0.40 && seleccionPregunta < 0.50){
+        if(seleccionPregunta >=0.50 && seleccionPregunta < 0.625){
             return respuestas[4];
         }
 
-        else if(seleccionPregunta >0.50 && seleccionPregunta < 0.60){
+        if(seleccionPregunta >=0.625 && seleccionPregunta < 0.75){
             return respuestas[5];
         }
 
-        else if(seleccionPregunta >0.60 && seleccionPregunta < 0.70){
+        if(seleccionPregunta >=0.75 && seleccionPregunta < 0.875){
             return respuestas[6];
         }
 
-        else if(seleccionPregunta >0.70 && seleccionPregunta < 0.80){
-            return respuestas[7];
-        }
-
-        else if(seleccionPregunta >0.80 && seleccionPregunta < 0.90){
-            return respuestas[8];
-        }
-
         else {
-            return respuestas[9];
+            return respuestas[7];
         }
 
     }
 
-    public void constructorPreguntas(String preguntaSeleccionada,String respuestaSeleccionada){
-        String tempPregunta, temRespuestaOK, temRespuestaE1, temRespuestaE2, temRespuestaE3;
+    public void constructorPreguntas(int preguntaSeleccionada,String respuestaSeleccionada){
+        String  temRespuestaOK, temRespuestaE1, temRespuestaE2, temRespuestaE3;
+        int tempPregunta;
         tempPregunta = preguntaSeleccionada;
         temRespuestaOK = respuestaSeleccionada;
         temRespuestaE1 = temRespuestaOK;
@@ -155,7 +147,7 @@ public class GamePlaneta extends AppCompatActivity {
             temRespuestaE3 = respuestasSeleccion();
         }
 
-        pregunta.setText(tempPregunta);
+        planetPick.setImageResource(tempPregunta);
 
         double aleatorio = Math.random();
 
@@ -260,10 +252,9 @@ public class GamePlaneta extends AppCompatActivity {
     }
 
     public void overQuestions(){
-        if (numeroPreguntas == 10){
+        if (numeroPreguntas == 8){
             Intent intent = new Intent(GamePlaneta.this, MainActivity.class);
             startActivity(intent);
-
         }
     }
 

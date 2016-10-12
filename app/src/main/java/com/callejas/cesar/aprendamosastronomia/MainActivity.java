@@ -100,6 +100,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gamepla(View view){
+        Intent intent = new Intent(this,GamePlaneta.class);
+        startActivity(intent);
+    }
+
 
 
 

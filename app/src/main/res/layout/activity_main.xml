@@ -98,6 +98,11 @@
                     android:onClick="gameLuna"
                     android:text="lunaTMP"/>
 
+                <Button
+                    style="@style/BtnMenu"
+                    android:onClick="gamepla"
+                    android:text="planetTMP"/>
+
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

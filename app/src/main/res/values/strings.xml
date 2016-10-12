@@ -227,4 +227,14 @@
     <string name="resLuna3">Luna Llena</string>
     <string name="resLuna4">Cuarto Menguante</string>
 
+    <string name="tituloGamePlanetas">Seleccione el nombre correspendiente al planeta</string>
+    <string name="resPlaneta1">Mercurio</string>
+    <string name="resPlaneta2">Venus</string>
+    <string name="resPlaneta3">Tierra</string>
+    <string name="resPlaneta4">Marte</string>
+    <string name="resPlaneta5">Jupiter</string>
+    <string name="resPlaneta6">Saturno</string>
+    <string name="resPlaneta7">Urano</string>
+    <string name="resPlaneta8">Neptuno</string>
+
 </resources>
