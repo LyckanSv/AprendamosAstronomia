@@ -95,7 +95,7 @@
 
                 <Button
                     style="@style/BtnMenu"
-<<<<<<< HEAD
+
                     android:onClick="gameLuna"
                     android:text="lunaTMP"/>
 
@@ -111,13 +111,9 @@
 
                 <Button
                     style="@style/BtnMenu"
-                    android:onClick="gamePosPlaneta"
-                    android:text="planeta2game"/>
-
-=======
                     android:onClick="startGamesMenu"
                     android:text="@string/juegosMenu"/>
->>>>>>> refs/remotes/origin/master
+
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
