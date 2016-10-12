@@ -105,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gameGalax(View view){
+        Intent intent = new Intent(this,GameQueGalaxia.class);
+        startActivity(intent);
+    }
 
 
 
