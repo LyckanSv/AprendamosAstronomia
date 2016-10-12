@@ -221,4 +221,10 @@
     <string name="respuesta9">9</string>
     <string name="respuesta10">10</string>
 
+    <string name="tituloLun">Selecciona la fase de la luna que corresponde a la imagen</string>
+    <string name="resLuna1">Luna nueva</string>
+    <string name="resLuna2">Cuarto Creciente</string>
+    <string name="resLuna3">Luna Llena</string>
+    <string name="resLuna4">Cuarto Menguante</string>
+
 </resources>

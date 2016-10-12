@@ -7,12 +7,13 @@
     tools:context="com.callejas.cesar.aprendamosastronomia.ViewGral"
     android:orientation="vertical"
     android:weightSum="10"
+    android:background="@color/primary"
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8.5"
+        android:layout_weight="9"
         android:orientation="vertical"
         android:id="@+id/mainContent">
 
@@ -40,9 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/itemName"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
+                    style="@style/Titulo"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"/>
 
@@ -50,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/itemContent"
-                    android:textAlignment="center"
+                    style="@style/texto"
                     android:paddingBottom="30dp"/>
 
             </LinearLayout>
@@ -59,20 +58,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1"
         android:orientation="horizontal"
         >
 
         <Button
             style="@style/backButton2"
             android:onClick="regresar"
-            android:text=" "
+            android:text="@string/VolverBtn"
             android:drawableStart="@drawable/ic_arrow_left"
             />
         <Button
             style="@style/backButton2"
             android:onClick="continuar"
-            android:text=" "
+            android:text="@string/SeguirBtn"
+            android:drawableEnd="@drawable/ic_arrow_right"
 
             />
 

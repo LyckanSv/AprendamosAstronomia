@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.callejas.cesar.aprendamosastronomia.ViewGral"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/primary">
 
     <ImageView
         android:layout_width="0dp"
@@ -37,9 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/itemName"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
+                    style="@style/Titulo"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"/>
 
@@ -47,7 +46,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/itemContent"
-                    android:textAlignment="center"
+                    style="@style/texto"
                     android:paddingBottom="30dp"/>
 
 
@@ -57,16 +56,18 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
             <Button
-                style="@style/backButton"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="5dp"
+                style="@style/backButton2"
                 android:onClick="regresar"
                 android:text=" "
                 android:drawableStart="@drawable/ic_arrow_left"
+                />
+            <Button
+                style="@style/backButton2"
+                android:onClick="juego"
+                android:text="Juego"
+                android:drawableEnd="@drawable/ic_arrow_right"
                 />
         </LinearLayout>
     </LinearLayout>

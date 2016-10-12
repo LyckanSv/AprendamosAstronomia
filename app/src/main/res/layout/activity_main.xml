@@ -93,6 +93,11 @@
                     android:onClick="galaxias"
                     android:text="@string/GalaxiaMenu"/>
 
+                <Button
+                    style="@style/BtnMenu"
+                    android:onClick="gameLuna"
+                    android:text="lunaTMP"/>
+
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

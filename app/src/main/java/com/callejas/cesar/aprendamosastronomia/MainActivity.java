@@ -95,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gameLuna(View view){
+        Intent intent = new Intent(this,GameFasesLuna.class);
+        startActivity(intent);
+    }
 
 
 
