@@ -34,8 +34,8 @@ public class ViewGral extends AppCompatActivity {
         finish();
     }
 
-    public void juego(View view){
-        Intent intent = new Intent(ViewGral.this, GamePlaneta.class);
+    public void juegoMenu(View view){
+        Intent intent = new Intent(ViewGral.this, Game_mainMenu.class);
         startActivity(intent);
     }
 }

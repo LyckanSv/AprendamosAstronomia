@@ -71,7 +71,7 @@
 
         <Button
             style="@style/backButton2"
-            android:onClick="juego"
+            android:onClick="juegoMenu"
             android:text="@string/juegosMenu"
             android:drawableEnd="@drawable/ic_arrow_right"
             />
