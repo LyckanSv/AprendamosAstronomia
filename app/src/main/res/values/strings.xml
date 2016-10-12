@@ -227,6 +227,12 @@
     <string name="resLuna3">Luna Llena</string>
     <string name="resLuna4">Cuarto Menguante</string>
 
+    <string name="tituloGameGalaxias">Selecciona el tipo de galaxia correspondiente a la imagen</string>
+    <string name="resGal1">Galaxia Espiral</string>
+    <string name="resGal2">Galaxia Eliptica</string>
+    <string name="resGal3">Galaxia Lenticular</string>
+    <string name="resGal4">Galaxia Irregular</string>
+
     <string name="tituloGamePlanetas">Seleccione el nombre correspendiente al planeta</string>
     <string name="resPlaneta1">Mercurio</string>
     <string name="resPlaneta2">Venus</string>
