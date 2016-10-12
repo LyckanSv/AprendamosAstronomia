@@ -41,7 +41,8 @@
                 android:layout_below="@id/mainTitle"
                 android:paddingLeft="25dp"
                 android:paddingRight="25dp"
-                android:id="@+id/botones">
+                android:id="@+id/botones"
+                android:layout_marginBottom="30dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -71,6 +72,12 @@
                         android:onClick="constelaciones"
                         android:text="@string/ConstelaMenu"/>
 
+                    <Button
+                        style="@style/BtnMenu"
+                        android:onClick="galaxias"
+                        android:text="@string/GalaxiaMenu"
+                        />
+
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
@@ -99,18 +106,12 @@
                         android:onClick="navesEsp"
                         android:text="@string/NavesMenu"/>
 
+                    <Button
+                        style="@style/BtnMenu"
+                        android:onClick="startGamesMenu"
+                        android:text="@string/juegosMenu"/>
                 </LinearLayout>
             </LinearLayout>
-
-            <Button
-                style="@style/BtnMenu"
-                android:onClick="galaxias"
-                android:text="@string/GalaxiaMenu"
-                android:layout_below="@id/botones"
-                android:layout_marginRight="25dp"
-                android:layout_marginLeft="25dp"/>
-
         </RelativeLayout>
-
     </ScrollView>
 </RelativeLayout>

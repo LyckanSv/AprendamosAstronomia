@@ -18,6 +18,7 @@
     <string name="ConstelaMenu">Constellations</string>
     <string name="NavesMenu">Spaceships</string>
     <string name="GalaxiaMenu">The Galaxies</string>
+    <string name="juegosMenu">¡Play now!</string>
 
     <!-- El sistema solar -->
     <string name="tituloSistemaSol"> The solar system</string>
