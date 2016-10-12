@@ -56,7 +56,9 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
+
             <Button
                 style="@style/backButton2"
                 android:onClick="regresar"
@@ -65,10 +67,11 @@
                 />
             <Button
                 style="@style/backButton2"
-                android:onClick="juegoMenu"
-                android:text="@string/juegosMenu"
+                android:onClick="continuar"
+                android:text="@string/SeguirBtn"
                 android:drawableEnd="@drawable/ic_arrow_right"
                 />
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8.5"
+        android:layout_weight="9"
         android:orientation="vertical"
         android:id="@+id/mainContent">
 
@@ -58,7 +58,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1"
         android:orientation="horizontal"
         >
 
@@ -73,7 +73,6 @@
             android:onClick="continuar"
             android:text="@string/SeguirBtn"
             android:drawableEnd="@drawable/ic_arrow_right"
-
             />
 
     </LinearLayout>
