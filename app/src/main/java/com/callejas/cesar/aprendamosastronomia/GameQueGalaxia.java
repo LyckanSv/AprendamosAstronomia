@@ -13,10 +13,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.lang.reflect.Array;
 
-public class GameFasesLuna extends AppCompatActivity {
+public class GameQueGalaxia extends AppCompatActivity {
     Button b1, b2, b3, b4;
     TextView puntaje, numpregunta;
-    ImageView lunaPic;
+    ImageView galPic;
     int preguntas[] = new int[4];
     String respuestas[] = new String[4];
     Boolean preguntasRealizadas[] = new Boolean[4];
@@ -27,7 +27,7 @@ public class GameFasesLuna extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_fases_luna);
+        setContentView(R.layout.activity_game_que_galaxia);
 
         b1 = (Button) findViewById(R.id.boton1);
         b2 = (Button) findViewById(R.id.boton2);
@@ -37,7 +37,7 @@ public class GameFasesLuna extends AppCompatActivity {
 
         puntaje = (TextView) findViewById(R.id.puntage);
         numpregunta = (TextView) findViewById(R.id.numPregunta);
-        lunaPic = (ImageView) findViewById(R.id.lunaPic);
+        galPic = (ImageView) findViewById(R.id.galPic);
         players = MediaPlayer.create(this, R.raw.song);
         wins = MediaPlayer.create(this, R.raw.win);
         over = MediaPlayer.create(this, R.raw.error);
@@ -48,16 +48,16 @@ public class GameFasesLuna extends AppCompatActivity {
     }
 
     public void arreglos(){
-        preguntas[0] = R.drawable.lunafase1nueva;
-        preguntas[1] = R.drawable.lunafase2cuartocre;
-        preguntas[2] = R.drawable.lunafase4llena;
-        preguntas[3] = R.drawable.lunafase3cuartomeng;
+        preguntas[0] = R.drawable.galaxiaespiral1;
+        preguntas[1] = R.drawable.galaxiaeliptica2;
+        preguntas[2] = R.drawable.galaxialenticular3;
+        preguntas[3] = R.drawable.galaxiairregular4;
 
 
-        respuestas[0] = getString(R.string.resLuna1);
-        respuestas[1] = getString(R.string.resLuna2);
-        respuestas[2] = getString(R.string.resLuna3);
-        respuestas[3] = getString(R.string.resLuna4);
+        respuestas[0] = getString(R.string.resGal1);
+        respuestas[1] = getString(R.string.resGal2);
+        respuestas[2] = getString(R.string.resGal3);
+        respuestas[3] = getString(R.string.resGal4);
 
         for (int i = 0; i < 4; i++){
             preguntasRealizadas[i] = true;
@@ -72,7 +72,7 @@ public class GameFasesLuna extends AppCompatActivity {
                     preguntasRealizadas[i] = false;
                     ids = i;
                     numeroPreguntas += 1;
-                    numpregunta.setText(R.string.tituloLun);
+                    numpregunta.setText(R.string.tituloGameGalaxias);
                     constructorPreguntas(preguntas[(i)],respuestas[i]);
                 }
                 else{
@@ -128,7 +128,7 @@ public class GameFasesLuna extends AppCompatActivity {
             temRespuestaE3 = respuestasSeleccion();
         }
 
-        lunaPic.setImageResource(tempPregunta);
+        galPic.setImageResource(tempPregunta);
 
         double aleatorio = Math.random();
 
@@ -177,20 +177,20 @@ public class GameFasesLuna extends AppCompatActivity {
             overQuestions();
         } else {
 
-        if(respuestas[ids] == b1.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
-            selector();
+            if(respuestas[ids] == b1.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
 
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
-            over.start();
-        }
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+                over.start();
+            }
 
         }
     }
@@ -211,20 +211,20 @@ public class GameFasesLuna extends AppCompatActivity {
             overQuestions();
         } else {
 
-        if(respuestas[ids] == b2.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
-            selector();
+            if(respuestas[ids] == b2.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
 
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
-            over.start();
-        }
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+                over.start();
+            }
         }
     }
 
@@ -243,19 +243,19 @@ public class GameFasesLuna extends AppCompatActivity {
 
             overQuestions();
         } else {
-        if(respuestas[ids] == b3.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
-            selector();
+            if(respuestas[ids] == b3.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
 
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
-        }
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+            }
         }
     }
 
@@ -277,36 +277,34 @@ public class GameFasesLuna extends AppCompatActivity {
 
         } else {
 
-        if(respuestas[ids] == b4.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
-            selector();
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
-            over.start();
-        }
+            if(respuestas[ids] == b4.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+                over.start();
+            }
         }
     }
 
     public void overQuestions(){
         String puntaje = String.valueOf(contadorPuntaje);
-        new AlertDialog.Builder(GameFasesLuna.this)
+        new AlertDialog.Builder(GameQueGalaxia.this)
                 .setTitle("Tu Puntaje")
                 .setMessage(puntaje)
                 .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        GameFasesLuna.this.finish();
+                        GameQueGalaxia.this.finish();
                     }
                 })
                 .show();
-        }
-
     }
 
-
+}
