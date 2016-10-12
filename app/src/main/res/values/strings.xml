@@ -15,15 +15,15 @@
     <string name="ElSolMenu">The Sun</string>
     <string name="LunaMenu">The Moon</string>
     <string name="EstrellasMenu">The stars</string>
-    <string name="ConstelaMenu">The constellations</string>
+    <string name="ConstelaMenu">Constellations</string>
     <string name="NavesMenu">Spaceships</string>
     <string name="GalaxiaMenu">The Galaxies</string>
 
     <!-- El sistema solar -->
     <string name="tituloSistemaSol"> The solar system</string>
     <string name="queEsSistemaSol"> What is the Solar System?</string>
-    <string name="sistemaSolInfo">The Solar System is the Sun and everything that revolves in orbit around it. This includes the nine planets and their moons, asteroids and
-                                    comets numerous. All are held in orbit around the Sun by the strong gravity of the sun.
+    <string name="sistemaSolInfo">The Solar System is the Sun and everything that revolves in orbit around it. This includes the eight planets and their moons, asteroids and
+                                    numerous comets. All are held in orbit around the Sun by the strong gravity force from the sun.
     </string>
 
     <!-- Planetas -->
@@ -32,59 +32,59 @@
     </string>
 
     <string name="tituloMercurio">Mercury</string>
-    <string name="mercurioInfo">Mercury is the smallest planet in the solar system, and is the closest to the sun is. The surface of this planet is much like the "seas" of our Moon,
-                                being also very abundant craters. It has begun to be studied in detail at the beginning of the century. Mercury can be seen with the naked eye, but sometimes you may
-                                need binoculars to observe.
+    <string name="mercurioInfo">Mercury is the smallest planet in the Solar System (excluding Pluto), and is as well the closest to the Sun. The surface of this planet is much like the "seas" of our Moon,
+                                being also very abundant in craters. It has begun to be studied in detail since the beginning of the century. Mercury can be seen with the naked eye, but sometimes you may
+                                need binoculars to observe it.
     </string>
 
     <string name="tituloVenus">Venus</string>
-    <string name="venusInfo">The second planet, Venus, is known for glowing at dawn or dusk, a feature that has earned him the nickname "star".
-                                It\'s a beautiful planet to observe with the naked eye. If you have a telescope and point it get to him, you will find that you can get to show phases like the Moon.
-                                This curious phenomenon is that is closer to the Sun than the Earth and so the sunlight can illuminate it from different angles.
-                                The temperature of Venus is higher than Mercury, even though it is farther from the sun. An astronomer named Carl Sagan discovered why this mystery, and so we know that
-                                this is due to the presence of gases in the atmosphere Venus causes a large greenhouse, retaining the heat they receive from the sun.
+    <string name="venusInfo">The second planet, Venus, is well known for glowing at dawn or dusk, a feature that has earned it the nickname "bright star".
+                                It\'s a beautiful planet to observe with the naked eye. If you have a telescope and you get to locate it, you will find that Venus can get to show phases like the Moon.
+                                This curious phenomenon is because the planet is closer to the Sun than the Earth; so the sunlight illuminates it from different angles.
+                                The temperature of Venus is higher than Mercury, even though it is farther from the sun. An astronomer named Carl Sagan discovered the cause of this mystery, and so  we got to know that
+                                this is due to the presence of gases in the atmosphere, causing Venus a large greenhouse effect, retaining the heat it receives from the sun.
     </string>
 
     <string name="tituloTierra">The earth</string>
-    <string name="tierraInfo">The earth is a big ball of rock, slightly flattened at the poles, and that turns around the Sun in 365 days and almost 6 hours.
-                                More than 70% of the surface is covered by oceans of liquid water. Earth inhabit millions and millions of living beings and is the site from which we are beginning to
+    <string name="tierraInfo">The earth is a big ball of rock, slightly flattened at the poles, that goes around the Sun in 365 days and almost 6 hours.
+                                More than 70% of the earth\'s surface is covered by oceans of liquid water. The Earth is inhabited by millions and millions of living beings and is the site from which we are beginning to
                                 know the universe as it is.
-                                Only astronauts have managed to see Earth from space, some from orbit, hundreds of kilometers, and others from the moon, hundreds of thousands of kilometers.
+                                Only astronauts have managed to see Earth from space, some from orbit, hundreds of kilometers away, and others from the moon, hundreds of thousands of kilometers away.
     </string>
 
     <string name="tituloMarte">Mars</string>
-    <string name="marteInfo">Mars is farther from the sun than Earth, and why does there colder. Mars has huge volcanoes, one of them, Mount Olympus, the largest in
-                                the solar system. It has frozen on its surface and underground water, as demonstrated by the Phoenix (Phoenix) robot. In the future we may find life on this planet.
+    <string name="marteInfo">Mars is farther from the sun than Earth, which makes it cooler. Mars has huge volcanoes, one of them, Mount Olympus, is the largest in
+                                the entire solar system. It is frozen on its surface and contains underground water, as demonstrated by the Phoenix robot. In the future we might find life on this planet.
                                 Mars is clearly visible to the naked eye.
     </string>
 
     <string name="tituloJupiter">Jupiter</string>
-    <string name="jupiterInfo">Jupiter is huge as 1,321 Earths. Although the Sun is much larger, of course, as 984 times Jupiter. It is a gas and capable of emitting radio
-                                waves planet. Jupiter\'s atmosphere is of enormous complexity, and its study may help us understand better how atmospheric phenomena on Earth and the famous climate
-                                change occur. In the atmosphere of Jupiter storms and anticyclones larger whole planet Earth and winds reach speeds unimaginable form.
-                                Accompany more than 60 satellites, the most known Io, Europa, Ganymede and Callisto, the four visible with simple binoculars from Earth. Jupiter is
+    <string name="jupiterInfo">Jupiter is as huge as 1,321 Earths. Although the Sun is much larger, of course, as 984 times bigger than Jupiter. It is a gas planet (The Gas Giant) and is capable of emitting radio
+                                waves. Jupiter\'s atmosphere is of enormous complexity, and its study may help us understand better how atmospheric phenomena on Earth and the famous climate
+                                change occur. In the atmosphere of Jupiter, storms and anticyclones larger than the whole planet Earth take place, with winds reaching speeds of unimaginable magnitude.
+                                It is accompanied by more than 60 satellites, the most known Io, Europa, Ganymede and Callisto, being the four visible with some binoculars from the Earth. Jupiter is
                                 perfectly visible to the naked eye.
     </string>
 
     <string name="tituloSaturno">Saturn</string>
-    <string name="saturnoInfo">Saturn always calls attention by the imposing ring around it. Actually not a single ring, but they are several. These rings are
-                                compose of millions of pieces of ice, some as big as a building, and other tiny, like a speck of dust. If you are able to find Saturn in the sky (it is observable
-                                to the naked eye) and then join up with you can see one of the greatest wonders of nature telescope: the rings of Saturn. Saturn is not the only planet with rings,
-                                but it is the one with the most beautiful. All gaseous planets have rings, although it is very difficult to see. And one last curiosity: to be composed mainly of gas
-                                and be as large compared to its mass, Saturn would float in the sea, could fit assuming, of course.
+    <string name="saturnoInfo">Saturn always catches everyone\'s attention because of that imposing ring around it. In fact it is not a single ring, they are several. These rings are
+                                composed of millions of pieces of ice, some as big as a building, and others tiny, like a speck of dust. If you are able to find Saturn in the sky (it is observable
+                                to the naked eye) and then you equip yourself with a telescope, you will see one of the greatest wonders of nature: the rings of Saturn. Saturn is not the only planet with rings,
+                                but it is the one with the most beautiful ones. All gas planets have rings, although it is very difficult to see them. \nAnd one last curiosity: composed mainly of gas
+                                and being as large compared to its mass, Saturn would float in the sea, assuming it could fit , of course.
     </string>
 
     <string name="tituloUrano">Uranus</string>
     <string name="uranoInfo">Uranus is the first planet discovered with a telescope, by musician and astronomer William Herschel in 1781, although it is true that
-                                you can see with the naked eye and certain African tribes had observed long before him. All the planets revolve around an axis, and all axes of all the planets are
-                                slightly inclined, but the planet with the axis of rotation is tilted more Uranus, with almost 98 °.
+                                you can see it with the naked eye and certain African tribes had observed it long before him. \nAll the planets revolve around an axis, and all axes of all the planets are
+                                slightly inclined, but the planet with the axis of rotation most tilted is Uranus, with almost 98 °.
     </string>
 
     <string name="tituloNeptuno">Neptune</string>
-    <string name="neptunoInfo">Neptune is a beautiful deep blue color and was the first planet discovered with mathematics. It was precisely Le Verrier one who indicated
-                                through their mathematical calculations, what would your position in the sky, so that the astronomer Galle discovered it in 1846 with a telescope. In all gaseous
-                                planets there are winds of unusual strength, and Neptune, like Jupiter, storms the size of whole planets are formed. Scientists believe that Neptune could have changed
-                                its position countless times Uranus million years ago, so it may not have always been the farthest planet from the Sun.
+    <string name="neptunoInfo">Neptune glows with a beautiful deep blue color and was the first planet discovered with mathematics. It was precisely Le Verrier the one who indicated
+                                through his mathematical calculations, what would its position be in the sky, so that astronomer Galle discovered the planet in 1846 with a telescope. In all gas
+                                planets there are winds of unusual strength, and in Neptune, like Jupiter, storms the size of whole planets are formed. Scientists believe that Neptune could have changed
+                                its position countless times with Uranus million years ago, so it may not have always been the farthest planet from the Sun.
     </string>
 
     <!-- Satelites -->
@@ -93,27 +93,27 @@
 
     <string name="tituloSatelite1">Ganymede</string>
     <string name="introSatelite1">Radius: 2631 km \nPlanet: Jupiter</string>
-    <string name="satelite1Info">It is one of the Jovian moons or Galilean Jupiter and is the largest in the solar system.
-                                Its name comes from a beautiful Trojan prince, son of the eponymous Tros (or Laomedonte, according to sources); Ganymede became the lover of
-                                Zeus and the cupbearer of the gods. On the etymology of its name Robert Graves (The Greek Myths) proposes ganuesthai + medea, "rejoicing in virility".
+    <string name="satelite1Info">It is one of the Jovian moons or Galileans from Jupiter and is the largest in the solar system.
+                                Its name comes from a beautiful Trojan prince, son of the eponymous Tros (or Laomedonte); Ganymede became the lover of
+                                Zeus and the cupbearer of the gods. On the etymology of its name; Robert Graves (The Greek Myths) proposes: ganuesthai + medea, "rejoicing in virility".
                                 This name was popularized from the mid-twentieth century.
 
     </string>
 
     <string name="tituloSatelite2">Titan</string>
     <string name="introSatelite2">Radius: 2575Km  \nPlanet: Saturn </string>
-    <string name="satelite2Info">It is the largest of Saturn and easily visible with amateur telescopes.
-                                The name "Titan" and the other seven satellites known Saturn by John Herschel (son of William Herschel)
-                                comes from its publication in 1847 of his observations on Saturn which he suggested the names of the Titans, sisters and brothers of Cronos
+    <string name="satelite2Info">It is the largest satellite of Saturn and is easily visible with amateur telescopes.
+                                The name "Titan" and the other seven Saturn satellites known by John Herschel (son of William Herschel)
+                                comes from its publication in 1847 of his observations on Saturn he suggested the names of the Titans, sisters and brothers of Cronos
                                 ( the Greek name for the Roman god of time Saturn) as a more effective method for naming the satellites of Saturn hitherto designated by Roman numerals in
                                 the order of proximity to the planet.
     </string>
 
     <string name="tituloSatelite3">Callisto</string>
     <string name="introSatelite3">Radius: 2400 Km \nPlanet: Jupiter</string>
-    <string name="satelite3Info">The satellite is named after one of the many lovers of Zeus in Greek mythology, where Callisto was a nymph (or, according to other sources,
+    <string name="satelite3Info">The satellite is named after one of the many lovers of Zeus, according to Greek mythology, where Callisto was a nymph (or, according to other sources,
                                 daughter of Lycaon) who was associated with the goddess of hunting Artemis. The name was proposed by astronomer Simon Marius soon after the discovery of the satellite.
-                                Marius attributed the suggestion to Johannes Kepler. However, the names of the Galilean satellites fell into disuse for a considerable time and not again extend their use
+                                Marius attributed the suggestion to Johannes Kepler. However, the names of the Galilean satellites fell into disuse for a considerable time and not again extended their use
                                 until the mid-twentieth century. In much of the relatively recent astronomical literature, Callisto is quoted by Roman numeral designation, Jupiter IV, a system introduced
                                 by Galileo, or as the "fourth satellite of Jupiter"
     </string>
@@ -126,42 +126,42 @@
 
     <string name="tituloSatelite5">The moon</string>
     <string name="introSatelite5">Radius: 1738 km \nPlanet: Earth</string>
-    <string name="satelite5Info">It is the largest in the Solar System relative to the size of its planet, a quarter the diameter of Earth and 1/81 its mass natural
-                                satellite and is the second densest satellite after Io. It is in synchronous relationship with the Earth, always showing the same face to Earth. The visible hemisphere
-                                is marked with dark volcanic lunar maria among the bright ancient mountains and astroblemas outstanding.
+    <string name="satelite5Info">It is the largest satellite in the Solar System relative to the size of its planet, a quarter the diameter of Earth and 1/81 its mass; and is the second densest satellite after Io.
+                                It is in a synchronous relationship with the Earth, always showing the same face to Earth. The visible hemisphere
+                                is marked with dark volcanic lunar maria among the bright ancient mountains.
     </string>
 
     <string name="tituloSatelite6">Europa</string>
     <string name="introSatelite6">Radius: 1569Km \nPlanet: Jupiter</string>
     <string name="satelite6Info">It was named after Europa, one of the many amorous conquests of Zeus in Greek mythology. Simon Marius suggested the name "Europe" after
                                 its discovery, but this name, and the name of the other Galilean moons were not commonly used until the mid-twentieth century. In much of the earlier astronomical
-                                literature I is mentioned for its Roman numeral designation, "Jupiter II" or as the "second satellite of Jupiter".
+                                literature it is mentioned for its Roman numeral designation, "Jupiter II" or as the "second satellite of Jupiter".
                                 It is the smallest of the Jovian or Galilean moons.
     </string>
 
     <!-- El Sol -->
     <string name="tituloSol">The sun</string>
     <string name="queEsSol">What is the Sun?</string>
-    <string name="elSolInfo">The sun is a star. It is a huge sphere of hot gas is shining and turning. much bigger and brighter than other stars because we are very close
-                            to him it appears. The Sun is the center of our solar system. All the planets in our solar system, including Earth, revolve around the sun.
+    <string name="elSolInfo">The sun is a star. It is a huge sphere of hot gas, constantly shining and turning. It seems much bigger and brighter than other stars because we are very close to it.
+                                The Sun is the center of our solar system. All the planets in our solar system, including Earth, revolve around the sun.
     </string>
 
     <!--La Luna -->
     <string name="tituloLuna">The moon</string>
     <string name="queEsLuna">What is the moon?</string>
-    <string name="laLunaInfo">The Moon is the satellite of our planet, Earth. satellite is called because revolves around us, and has done so more than four billion years.
-                            But where did it come from? For some astronomers think that once was a part of our planet and others who passed through here and came so close to Earth that the force
-                            of gravity (the force that the Earth sticking it to her like a magnet and not let us out floating like astronauts) he attracted him and not let him never go further.
+    <string name="laLunaInfo">The Moon is the satellite of our planet, the Earth. It is called satellite because it revolves around us, and has done so more than four billion years.
+                            But where did it come from? Well, some astronomers think that it was once a part of our planet; and others think that it passed through our orbit and came so close to Earth that the force
+                            of the Earth\'s gravity attracted the moon, so that it stayed in our orbit forever.
     </string>
 
 
     <!-- Las Estrellas -->
     <string name="tituloEstrellas">The stars</string>
     <string name="queEsEstrella">What is a star?</string>
-    <string name="estrellasInfo">A star is a huge sphere of gas very hot and bright. Stars produce their own light and energy through a process called nuclear fusion.
+    <string name="estrellasInfo">A star is a huge, very hot and bright sphere of gas. Stars produce their own light and energy through a process called nuclear fusion.
                             The merger happens when the lighter elements are forced to become heavier elements. When this happens, a tremendous amount of energy is created causing the star to
-                            heat up and shine. The stars they are found in a variety of sizes and colors. Our sun is a yellow star of average size. The stars that are smaller than our sun are
-                            red and which are larger than this are blue.
+                            heat up and shine. The stars are found in a extremely wide variety of sizes and colors. Our sun is a yellow star of average size. The stars that are smaller than our sun are
+                            red and the larger ones are blue.
     </string>
 
 
@@ -177,19 +177,17 @@
     <!-- Naves Espaciales -->
     <string name="tituloNavesEspaciales">Spaceships</string>
     <string name="queSonNavesEspaciales">What are the spaceships?</string>
-    <string name="navesEspacialesInfo">Spacecraft are vehicles designed to operate beyond the Earth\'s atmosphere, in outer space. There are 2 types of robotic ships
-                            are not carrying them crew and remain for a long time in space and are more well known as satellites and crewed ships that are carrying as passengers astronauts.
-                            One of the best known is the Orion spacecraft, the Endeavour or Magellan, which were created by NASA and can accommodate up to 6 crew.
-                            It is important to know that a spacecraft is divided into several parts, has a kind of nerve system or brain that is what saves the information in its
-                            memory, and can transmit it in real time with communication with the base on earth, and which can be commanded by astronauts; also it has antennas which are a
-                            kind of satellite that emit waves and is also constituted by the body which is where the crew roost.
+    <string name="navesEspacialesInfo">Spacecraft are vehicles designed to operate beyond the Earth's atmosphere, in outer space. There are 2 types of robotic ships; the ones that does not carry a crew and remain for a long time in space are more well known as satellites; and  ships that carries astronauts as passengers.
+                                        One of the best known is the Orion spacecraft, the Endeavour or Magellan, which were created by NASA and can accommodate
+                                        up to 6 crew. It is important to know that a spacecraft is divided into several parts, has a kind of nerve system or brain that is what saves the information
+                                        in its memory, and can communicate it in real time  with the base on earth, and which can be commanded by astronauts.
     </string>
 
 
     <!-- Las Galaxias -->
     <string name="tituloGalaxias">Galaxies</string>
     <string name="queSonGalaxias">What are the galaxies?</string>
-    <string name="galaxiasInfo">Galaxies are huge collections of stars, dust and gas. Usually they contain from several million to more than a trillion stars and can
+    <string name="galaxiasInfo">Galaxies are huge collections of stars, dust and gas. Usually they contain from several millions to more than trillions stars and can
                             vary in size from a few thousand to several hundred thousand light years across. There are hundreds of billions of galaxies in the universe. Galaxies come in many
                             different sizes, shapes and brilliance, and like the stars, are found alone, in pairs or in larger groups called clusters. Galaxies are divided into three basic types:
                             spiral, elliptical and irregular.
@@ -221,26 +219,26 @@
     <string name="respuesta9">9</string>
     <string name="respuesta10">10</string>
 
-    <string name="tituloLun">Selecciona la fase de la luna que corresponde a la imagen</string>
-    <string name="resLuna1">Luna nueva</string>
-    <string name="resLuna2">Cuarto Creciente</string>
-    <string name="resLuna3">Luna Llena</string>
-    <string name="resLuna4">Cuarto Menguante</string>
+    <string name="tituloLun">Select the moon phase belonging to the picture</string>
+    <string name="resLuna1">New moon</string>
+    <string name="resLuna2">First Quarter Half Moon</string>
+    <string name="resLuna3">Full Moon</string>
+    <string name="resLuna4">Last Quarter Half Moon</string>
 
-    <string name="tituloGameGalaxias">Selecciona el tipo de galaxia correspondiente a la imagen</string>
-    <string name="resGal1">Galaxia Espiral</string>
-    <string name="resGal2">Galaxia Eliptica</string>
-    <string name="resGal3">Galaxia Lenticular</string>
-    <string name="resGal4">Galaxia Irregular</string>
+    <string name="tituloGameGalaxias">Select the type of Galaxy belonging to the picture</string>
+    <string name="resGal1">Spiral Galaxies</string>
+    <string name="resGal2">Elliptical Galaxy</string>
+    <string name="resGal3">Lenticular Galaxy</string>
+    <string name="resGal4">Irregular Galaxy</string>
 
-    <string name="tituloGamePlanetas">Seleccione el nombre correspendiente al planeta</string>
-    <string name="resPlaneta1">Mercurio</string>
+    <string name="tituloGamePlanetas">Select the name that corresponds to the planet</string>
+    <string name="resPlaneta1">Mercury</string>
     <string name="resPlaneta2">Venus</string>
-    <string name="resPlaneta3">Tierra</string>
-    <string name="resPlaneta4">Marte</string>
+    <string name="resPlaneta3">The Earth</string>
+    <string name="resPlaneta4">Mars</string>
     <string name="resPlaneta5">Jupiter</string>
-    <string name="resPlaneta6">Saturno</string>
-    <string name="resPlaneta7">Urano</string>
-    <string name="resPlaneta8">Neptuno</string>
+    <string name="resPlaneta6">Saturn</string>
+    <string name="resPlaneta7">Uranus</string>
+    <string name="resPlaneta8">Neptune</string>
 
 </resources>

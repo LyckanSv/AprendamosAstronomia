@@ -147,7 +147,7 @@
     <string name="satelite5Info">Es el satélite natural más grande en el Sistema Solar en relación al tamaño de su planeta, un cuarto del
                             diámetro de la Tierra y 1/81 de su masa, y es el segundo satélite más denso después de Ío. Se encuentra en relación síncrona con
                             la Tierra, siempre mostrando la misma cara a la Tierra. El hemisferio visible está marcado con oscuros mares lunares de origen
-                            volcánico entre las brillantes montañas antiguas y los destacados astroblemas.
+                            volcánico entre las brillantes montañas antiguas.
     </string>
 
         <string name="tituloSatelite6">Europa</string>
@@ -264,5 +264,15 @@
     <string name="resGal2">Galaxia Eliptica</string>
     <string name="resGal3">Galaxia Lenticular</string>
     <string name="resGal4">Galaxia Irregular</string>
+
+    <string name="tituloGamePlanetas">Seleccione el nombre correspendiente al planeta</string>
+    <string name="resPlaneta1">Mercurio</string>
+    <string name="resPlaneta2">Venus</string>
+    <string name="resPlaneta3">Tierra</string>
+    <string name="resPlaneta4">Marte</string>
+    <string name="resPlaneta5">Jupiter</string>
+    <string name="resPlaneta6">Saturno</string>
+    <string name="resPlaneta7">Urano</string>
+    <string name="resPlaneta8">Neptuno</string>
 
 </resources>
