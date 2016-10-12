@@ -22,7 +22,11 @@
         <activity android:name=".View_planetas" />
         <activity android:name=".GameFasesLuna" />
         <activity android:name=".GameQueGalaxia" />
+<<<<<<< HEAD
         <activity android:name=".GamePosPlaneta"></activity>
+=======
+        <activity android:name=".Game_mainMenu"></activity>
+>>>>>>> refs/remotes/origin/master
     </application>
 
 </manifest>

@@ -95,11 +95,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void gameLuna(View view){
-        Intent intent = new Intent(this,GameFasesLuna.class);
+    public void startGamesMenu(View view){
+        Intent intent = new Intent(this,Game_mainMenu.class);
         startActivity(intent);
     }
 
+<<<<<<< HEAD
     public void gamepla(View view){
         Intent intent = new Intent(this,GamePlaneta.class);
         startActivity(intent);
@@ -114,4 +115,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+=======
+>>>>>>> refs/remotes/origin/master
 }

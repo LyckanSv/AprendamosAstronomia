@@ -20,19 +20,19 @@
             <ImageView
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/mainLogo"
-                android:src="@drawable/astronauta1"/>
+                android:src="@drawable/juegosmenu"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/mainTitle"
                 android:layout_below="@id/mainLogo"
-                android:text="@string/appMenuTitle"
+                android:text="@string/juegosMenu"
                 android:textColor="@android:color/white"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="35sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,35 +49,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:paddingRight="5dp"
-                    >
+                    android:paddingRight="5dp">
 
                     <Button
                         style="@style/BtnMenu"
-                        android:onClick="sistemaSolar"
-                        android:text="@string/SisSolarMenu"
+                        android:onClick="game1"
+                        android:text="@string/juego1"
                         />
 
                     <Button
                         style="@style/BtnMenu"
-                        android:onClick="satelitesGrandes"
-                        android:text="@string/SatelitesMenu"/>
-
-                    <Button
-                        style="@style/BtnMenu"
-                        android:onClick="laLuna"
-                        android:text="@string/LunaMenu"/>
-
-                    <Button
-                        style="@style/BtnMenu"
-                        android:onClick="constelaciones"
-                        android:text="@string/ConstelaMenu"/>
-
-                    <Button
-                        style="@style/BtnMenu"
-                        android:onClick="galaxias"
-                        android:text="@string/GalaxiaMenu"
-                        />
+                        android:onClick="game3"
+                        android:text="@string/juego3"/>
 
                 </LinearLayout>
                 <LinearLayout
@@ -89,63 +72,16 @@
 
                     <Button
                         style="@style/BtnMenu"
-                        android:onClick="losPlanetas"
-                        android:text="@string/PlanetasMenu"/>
+                        android:onClick="game2"
+                        android:text="@string/juego2"/>
 
                     <Button
                         style="@style/BtnMenu"
-                        android:onClick="elSol"
-                        android:text="@string/ElSolMenu"/>
+                        android:onClick="game4"
+                        android:text="@string/juego4"/>
 
-                    <Button
-                        style="@style/BtnMenu"
-                        android:onClick="lasEstrellas"
-                        android:text="@string/EstrellasMenu"/>
-
-                    <Button
-                        style="@style/BtnMenu"
-                        android:onClick="navesEsp"
-                        android:text="@string/NavesMenu"/>
-
-                    <Button
-                        style="@style/BtnMenu"
-                        android:onClick="startGamesMenu"
-                        android:text="@string/juegosMenu"/>
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

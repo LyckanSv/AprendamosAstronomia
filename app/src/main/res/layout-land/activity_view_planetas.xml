@@ -5,29 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.callejas.cesar.aprendamosastronomia.ViewGral"
-    android:orientation="vertical"
-    android:weightSum="10"
-    android:background="@color/primary"
-    >
+    android:orientation="horizontal"
+    android:background="@color/primary">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/pictureItem"
+        android:scaleType="fitCenter"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8.5"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/mainContent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/pictureItem"
-            android:scaleType="fitCenter"/>
-
+        android:weightSum="10">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="9">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -52,29 +49,29 @@
                     style="@style/texto"
                     android:paddingBottom="30dp"/>
 
+
             </LinearLayout>
         </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                style="@style/backButton2"
+                android:onClick="regresar"
+                android:text="@string/VolverBtn"
+                android:drawableStart="@drawable/ic_arrow_left"
+                />
+            <Button
+                style="@style/backButton2"
+                android:onClick="continuar"
+                android:text="@string/SeguirBtn"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                />
+        </LinearLayout>
+
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:orientation="horizontal"
-        >
-
-        <Button
-            style="@style/backButton2"
-            android:onClick="regresar"
-            android:text="@string/VolverBtn"
-            android:drawableStart="@drawable/ic_arrow_left"
-            />
-
-        <Button
-            style="@style/backButton2"
-            android:onClick="juegoMenu"
-            android:text="@string/juegosMenu"
-            android:drawableEnd="@drawable/ic_arrow_right"
-            />
-
     </LinearLayout>
-</LinearLayout>
