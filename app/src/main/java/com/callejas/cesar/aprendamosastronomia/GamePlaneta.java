@@ -41,6 +41,7 @@ public class GamePlaneta extends AppCompatActivity {
         players.start();
         arreglos();
         selector();
+
         
     }
 
