@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,GameQueGalaxia.class);
         startActivity(intent);
     }
-    
+
 
 
 
