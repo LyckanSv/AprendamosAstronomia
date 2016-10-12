@@ -20,6 +20,12 @@
     <string name="GalaxiaMenu">The Galaxies</string>
     <string name="juegosMenu">¡Play now!</string>
 
+    <string name="juego1">Which planet is?</string>
+    <string name="juego2">Moon Phases</string>
+    <string name="juego3">What type of galaxy is?</string>
+    <string name="juego4">Sorts planets</string>
+
+
     <!-- El sistema solar -->
     <string name="tituloSistemaSol"> The solar system</string>
     <string name="queEsSistemaSol"> What is the Solar System?</string>
@@ -178,7 +184,7 @@
     <!-- Naves Espaciales -->
     <string name="tituloNavesEspaciales">Spaceships</string>
     <string name="queSonNavesEspaciales">What are the spaceships?</string>
-    <string name="navesEspacialesInfo">Spacecraft are vehicles designed to operate beyond the Earth's atmosphere, in outer space. There are 2 types of robotic ships; the ones that does not carry a crew and remain for a long time in space are more well known as satellites; and  ships that carries astronauts as passengers.
+    <string name="navesEspacialesInfo">Spacecraft are vehicles designed to operate beyond the Earth\'s atmosphere, in outer space. There are 2 types of robotic ships; the ones that does not carry a crew and remain for a long time in space are more well known as satellites; and  ships that carries astronauts as passengers.
                                         One of the best known is the Orion spacecraft, the Endeavour or Magellan, which were created by NASA and can accommodate
                                         up to 6 crew. It is important to know that a spacecraft is divided into several parts, has a kind of nerve system or brain that is what saves the information
                                         in its memory, and can communicate it in real time  with the base on earth, and which can be commanded by astronauts.
@@ -193,7 +199,6 @@
                             different sizes, shapes and brilliance, and like the stars, are found alone, in pairs or in larger groups called clusters. Galaxies are divided into three basic types:
                             spiral, elliptical and irregular.
     </string>
-
 
     <!--TODO Solor es para la pruebas, se debe de borrar-->
 

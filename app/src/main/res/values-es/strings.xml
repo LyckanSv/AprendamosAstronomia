@@ -22,6 +22,14 @@
         <string name="GalaxiaMenu">Las Galaxias</string>
         <string name="juegosMenu">¡Juega Ahora!</string>
 
+
+    <string name="juego1">¿Cuál planeta es éste?</string>
+    <string name="juego2">Fases de la luna</string>
+    <string name="juego3">¿Qué tipo de galaxia es ésta?</string>
+    <string name="juego4">Ordena los planetas</string>
+
+
+
         <!-- El sistema solar -->
         <string name="tituloSistemaSol"> El Sistema Solar</string>
         <string name="queEsSistemaSol"> ¿Qué es el Sistema Solar?</string>

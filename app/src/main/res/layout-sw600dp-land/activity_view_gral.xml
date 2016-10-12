@@ -5,25 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.callejas.cesar.aprendamosastronomia.ViewGral"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/primary">
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/pictureItem"
-        android:scaleType="centerCrop"/>
+        android:scaleType="fitCenter"/>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="4">
+        android:weightSum="10">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3">
+            android:layout_weight="9">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -37,9 +38,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/itemName"
-                    android:textSize="22dp"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
+                    style="@style/Titulo"
+                    android:textSize="22sp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"/>
 
@@ -47,8 +47,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/itemContent"
+                    style="@style/texto"
                     android:textSize="18sp"
-                    android:textAlignment="center"
                     android:paddingBottom="30dp"/>
 
 
@@ -58,16 +58,18 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
             <Button
-                style="@style/backButton"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="5dp"
+                style="@style/backButton2"
                 android:onClick="regresar"
-                android:text=" "
+                android:text="@string/VolverBtn"
                 android:drawableStart="@drawable/ic_arrow_left"
+                />
+            <Button
+                style="@style/backButton2"
+                android:onClick="juegoMenu"
+                android:text="@string/juegosMenu"
+                android:drawableEnd="@drawable/ic_arrow_right"
                 />
         </LinearLayout>
     </LinearLayout>

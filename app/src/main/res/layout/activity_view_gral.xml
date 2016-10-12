@@ -72,7 +72,7 @@
         <Button
             style="@style/backButton2"
             android:onClick="juego"
-            android:text="Juego"
+            android:text="@string/juegosMenu"
             android:drawableEnd="@drawable/ic_arrow_right"
             />
 
