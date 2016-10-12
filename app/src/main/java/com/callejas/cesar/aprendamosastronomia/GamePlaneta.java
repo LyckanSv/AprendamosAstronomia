@@ -13,14 +13,16 @@ import android.widget.Toast;
 public class GamePlaneta extends AppCompatActivity {
     Button b1, b2, b3, b4;
     TextView puntaje, numpregunta;
-    ImageView planetPick;
-    int preguntas[] = new int[8];
+    ImageView pregunta;
+    String preguntas[] = new String[8];
     String respuestas[] = new String[8];
     Boolean preguntasRealizadas[] = new Boolean[8];
+    int imagen[] = new int[8] ;
     int contadorPuntaje = 0;
     int numeroPreguntas = 0;
     int ids;
     MediaPlayer players, wins, over;
+    double valor_anterior;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +32,9 @@ public class GamePlaneta extends AppCompatActivity {
         b2 = (Button) findViewById(R.id.boton2);
         b3 = (Button) findViewById(R.id.boton3);
         b4 = (Button) findViewById(R.id.boton4);
-
         puntaje = (TextView) findViewById(R.id.puntage);
         numpregunta = (TextView) findViewById(R.id.numPregunta);
-        planetPick = (ImageView) findViewById(R.id.lunaPic);
+        pregunta = (ImageView) findViewById(R.id.imagenPic);
         players = MediaPlayer.create(this, R.raw.song);
         wins = MediaPlayer.create(this, R.raw.win);
         over = MediaPlayer.create(this, R.raw.error);
@@ -42,18 +43,19 @@ public class GamePlaneta extends AppCompatActivity {
         arreglos();
         selector();
 
-        
+
     }
 
     public void arreglos(){
-        preguntas[0] = R.drawable.gamemercurio;
-        preguntas[1] = R.drawable.gamevenus;
-        preguntas[2] = R.drawable.gametierra;
-        preguntas[3] = R.drawable.gamemartes;
-        preguntas[4] = R.drawable.gamejupiter;
-        preguntas[5] = R.drawable.gamesaturno;
-        preguntas[6] = R.drawable.gameurano;
-        preguntas[7] = R.drawable.gameneptuno;
+        preguntas[0] = getString(R.string.pregunta1);
+        preguntas[1] = getString(R.string.pregunta2);
+        preguntas[2] = getString(R.string.pregunta3);
+        preguntas[3] = getString(R.string.pregunta4);
+        preguntas[4] = getString(R.string.pregunta5);
+        preguntas[5] = getString(R.string.pregunta6);
+        preguntas[6] = getString(R.string.pregunta7);
+        preguntas[7] = getString(R.string.pregunta8);
+
 
         respuestas[0] = getString(R.string.resPlaneta1);
         respuestas[1] = getString(R.string.resPlaneta2);
@@ -64,20 +66,29 @@ public class GamePlaneta extends AppCompatActivity {
         respuestas[6] = getString(R.string.resPlaneta7);
         respuestas[7] = getString(R.string.resPlaneta8);
 
-        for (int i = 0; i < 7; i++){
+        imagen[0] = R.drawable.gamemercurio;
+        imagen[1] = R.drawable.gamevenus;
+        imagen[2] = R.drawable.gametierra;
+        imagen[3] = R.drawable.gamemartes;
+        imagen[4] = R.drawable.gamejupiter;
+        imagen[5] = R.drawable.gamesaturno;
+        imagen[6] = R.drawable.gameurano;
+        imagen[7] = R.drawable.gameneptuno;
+        for (int i = 0; i < 8 ; i++){
             preguntasRealizadas[i] = true;
         }
     }
 
     public void selector(){
         double seleccionPregunta = Math.random();
-        for (int i = 0; i <7; i++){
+        for (int i = 0; i < 8; i++){
             if (seleccionPregunta >= (0.125*(i)) && seleccionPregunta < (0.125 * (i+1))){
                 if( preguntasRealizadas[i]){
                     preguntasRealizadas[i] = false;
                     ids = i;
                     numeroPreguntas += 1;
-
+                    numpregunta.setText("Pregunta " + String.valueOf(numeroPreguntas));
+                    pregunta.setImageResource(imagen[i]);
                     constructorPreguntas(preguntas[(i)],respuestas[i]);
                 }
                 else{
@@ -92,30 +103,31 @@ public class GamePlaneta extends AppCompatActivity {
     public String respuestasSeleccion(){
         double seleccionPregunta = Math.random();
 
+
         if(seleccionPregunta < 0.125){
             return respuestas[0];
         }
-        if(seleccionPregunta >=0.125 && seleccionPregunta < 0.25){
+        else if(seleccionPregunta >=0.125 && seleccionPregunta < 0.25){
             return respuestas[1];
         }
 
-        if(seleccionPregunta >=0.25 && seleccionPregunta < 0.375){
+        else if(seleccionPregunta >=0.25 && seleccionPregunta < 0.375){
             return respuestas[2];
         }
 
-        if(seleccionPregunta >=0.375 && seleccionPregunta < 0.5){
+        else if(seleccionPregunta >=0.375 && seleccionPregunta < 0.5){
             return respuestas[3];
         }
 
-        if(seleccionPregunta >=0.50 && seleccionPregunta < 0.625){
+        else if(seleccionPregunta >=0.5 && seleccionPregunta < 0.625){
             return respuestas[4];
         }
 
-        if(seleccionPregunta >=0.625 && seleccionPregunta < 0.75){
+        else if(seleccionPregunta >=0.625 && seleccionPregunta < 0.75){
             return respuestas[5];
         }
 
-        if(seleccionPregunta >=0.75 && seleccionPregunta < 0.875){
+        else if(seleccionPregunta >=0.75 && seleccionPregunta < 0.875){
             return respuestas[6];
         }
 
@@ -125,9 +137,8 @@ public class GamePlaneta extends AppCompatActivity {
 
     }
 
-    public void constructorPreguntas(int preguntaSeleccionada,String respuestaSeleccionada){
-        String  temRespuestaOK, temRespuestaE1, temRespuestaE2, temRespuestaE3;
-        int tempPregunta;
+    public void constructorPreguntas(String preguntaSeleccionada,String respuestaSeleccionada){
+        String tempPregunta, temRespuestaOK, temRespuestaE1, temRespuestaE2, temRespuestaE3;
         tempPregunta = preguntaSeleccionada;
         temRespuestaOK = respuestaSeleccionada;
         temRespuestaE1 = temRespuestaOK;
@@ -148,7 +159,7 @@ public class GamePlaneta extends AppCompatActivity {
             temRespuestaE3 = respuestasSeleccion();
         }
 
-        planetPick.setImageResource(tempPregunta);
+
 
         double aleatorio = Math.random();
 
@@ -258,6 +269,5 @@ public class GamePlaneta extends AppCompatActivity {
             startActivity(intent);
         }
     }
-
 
 }
