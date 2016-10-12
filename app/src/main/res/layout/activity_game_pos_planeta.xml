@@ -18,8 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Orden de planetas"
-            android:textColor="#ffffff"
-            android:textSize="35dp"
+            style="@style/Titulo"
+            android:textSize="35sp"
             android:textAlignment="center"
             />
 
@@ -37,7 +37,7 @@
                     android:layout_height="match_parent"
                     android:textAlignment="center"
                     android:textColor="#ffffff"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:id="@+id/listado"
                     />
 

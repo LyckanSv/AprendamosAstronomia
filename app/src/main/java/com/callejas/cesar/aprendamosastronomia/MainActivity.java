@@ -99,21 +99,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Game_mainMenu.class);
         startActivity(intent);
     }
-
-
-    public void gamepla(View view){
-        Intent intent = new Intent(this,GamePlaneta.class);
-        startActivity(intent);
-    }
-
-    public void gameGalax(View view){
-        Intent intent = new Intent(this,GameQueGalaxia.class);
-        startActivity(intent);
-    }
-
-
-
-
-
-
 }

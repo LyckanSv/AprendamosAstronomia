@@ -1,5 +1,7 @@
 package com.callejas.cesar.aprendamosastronomia;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -117,13 +119,45 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void comprobar(){
         if (posicion == 8){
             if ( memoria.equalsIgnoreCase("ABCDEFGH")){
-                Toast toast = Toast.makeText(getApplicationContext(), "Es correcto", Toast.LENGTH_SHORT);
-                toast.show();
+                //Toast toast = Toast.makeText(getApplicationContext(), "Es correcto", Toast.LENGTH_SHORT);
+                //toast.show();
+                new AlertDialog.Builder(GamePosPlaneta.this)
+                        .setTitle("Tu Puntaje")
+                        .setMessage("Resultado Correcto. ¡Felicidades!")
+                        .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                GamePosPlaneta.this.finish();
+                            }
+                        })
+                        .show();
+
             }else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Respuesta incorrecta", Toast.LENGTH_SHORT);
-                toast.show();
+                //Toast toast = Toast.makeText(getApplicationContext(), "Respuesta incorrecta", Toast.LENGTH_SHORT);
+                //toast.show();
+                new AlertDialog.Builder(GamePosPlaneta.this)
+                        .setTitle("Tu Puntaje")
+                        .setMessage("Resultado Incorrecto! Intente denuevo")
+                        .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                GamePosPlaneta.this.finish();
+                            }
+                        })
+                        .show();
             }
         }
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        players.pause();
+    }
+    @Override
+    public void onResume(){
+        super.onResume();
+        players.start();
     }
 
 

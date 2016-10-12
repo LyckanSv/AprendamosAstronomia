@@ -1,5 +1,7 @@
 package com.callejas.cesar.aprendamosastronomia;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -194,81 +196,135 @@ public class GamePlaneta extends AppCompatActivity {
     }
 
     public void boton1(View view){
-        if(respuestas[ids] == b1.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
+        if(numeroPreguntas==8){
+            if(respuestas[ids] == b1.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                toast.show();
+                contadorPuntaje += 10;
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+            }
             overQuestions();
-            selector();
+        } else {
 
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
-            over.start();
+            if (respuestas[ids] == b1.getText()) {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
+
+            } else {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+                over.start();
+            }
         }
     }
 
     public void boton2(View view){
-        if(respuestas[ids] == b2.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
+        if(numeroPreguntas==8){
+            if(respuestas[ids] == b2.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                toast.show();
+                contadorPuntaje += 10;
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+            }
             overQuestions();
-            selector();
+        } else {
 
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
-            over.start();
+            if (respuestas[ids] == b2.getText()) {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
+
+            } else {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+                over.start();
+            }
         }
     }
 
     public void boton3(View view){
-        if(respuestas[ids] == b3.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
+        if(numeroPreguntas==8){
+            if(respuestas[ids] == b3.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                toast.show();
+                contadorPuntaje += 10;
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+            }
             overQuestions();
-            selector();
+        } else {
+            if (respuestas[ids] == b3.getText()) {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
 
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
+            } else {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+            }
         }
     }
 
     public void boton4(View view){
-        if(respuestas[ids] == b4.getText() ){
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
-            wins.start();
-            toast.show();
-            contadorPuntaje += 10;
-            puntaje.setText(String.valueOf(contadorPuntaje));
+        if(numeroPreguntas==8){
+            if(respuestas[ids] == b4.getText() ){
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                toast.show();
+                contadorPuntaje += 10;
+            }
+            else{
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+            }
             overQuestions();
-            selector();
-        }
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
-            toast.show();
-            over.start();
+        } else {
+            if (respuestas[ids] == b4.getText()) {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                wins.start();
+                toast.show();
+                contadorPuntaje += 10;
+                puntaje.setText(String.valueOf(contadorPuntaje));
+                selector();
+            } else {
+                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                toast.show();
+                over.start();
+            }
         }
     }
 
     public void overQuestions(){
-        if (numeroPreguntas == 8){
-            Intent intent = new Intent(GamePlaneta.this, MainActivity.class);
-            startActivity(intent);
-        }
+        String puntaje = String.valueOf(contadorPuntaje);
+        new AlertDialog.Builder(GamePlaneta.this)
+                .setTitle("Tu Puntaje")
+                .setMessage(puntaje)
+                .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        GamePlaneta.this.finish();
+                    }
+                })
+                .show();
     }
+
     @Override
     public void onPause(){
         super.onPause();

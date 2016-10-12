@@ -307,4 +307,16 @@ public class GameQueGalaxia extends AppCompatActivity {
                 .show();
     }
 
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        players.pause();
+    }
+    @Override
+    public void onResume(){
+        super.onResume();
+        players.start();
+    }
+
 }

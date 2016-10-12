@@ -30,7 +30,7 @@ public class Game_mainMenu extends AppCompatActivity {
     }
 
     public void game4(View view){
-        Intent intent = new Intent(this,GameQueGalaxia.class);
+        Intent intent = new Intent(this,GamePosPlaneta.class);
         startActivity(intent);
     }
 

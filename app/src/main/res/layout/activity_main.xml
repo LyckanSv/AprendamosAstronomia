@@ -95,22 +95,6 @@
 
                 <Button
                     style="@style/BtnMenu"
-
-                    android:onClick="gameLuna"
-                    android:text="lunaTMP"/>
-
-                <Button
-                    style="@style/BtnMenu"
-                    android:onClick="gamepla"
-                    android:text="planetTMP"/>
-
-                <Button
-                    style="@style/BtnMenu"
-                    android:onClick="gameGalax"
-                    android:text="planetTMP"/>
-
-                <Button
-                    style="@style/BtnMenu"
                     android:onClick="startGamesMenu"
                     android:text="@string/juegosMenu"/>
 
