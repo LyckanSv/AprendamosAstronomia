@@ -234,6 +234,20 @@
                             tipos básicos: espirales, elípticas e irregulares.
     </string>
 
+    <string name="tituloGalaxia1">Galaxias Espirales</string>
+    <string name="infoGalaxia1">Forman un dibujo en espiral parecido a un remolino con brazos; el centro se compone principalmente de estrellas viejas y los brazos de estrellas jóvenes.</string>
+
+    <string name="tituloGalaxia2">Galaxias Elípticas</string>
+    <string name="infoGalaxia2">Son circulares u ovaladas. Se trata del tipo de galaxias más antiguas, tienen muy poco gas y polvo interestelar, y se componen principalmente de estrellas viejas.</string>
+
+    <string name="tituloGalaxia3">Galaxias lenticulares</string>
+    <string name="infoGalaxia3">Una galaxia lenticular es un tipo de galaxia intermedia entre una galaxia elíptica y una galaxia espiral. Las galaxias lenticulares son con forma de disco,
+                                (al igual que las galaxias espirales) que han consumido o perdido gran parte o toda su materia interestelar (como las galaxias elípticas), y por tanto carecen de brazos espirales, aunque a
+                                veces existe cierta cantidad de materia interestelar, sobre todo polvo.</string>
+
+    <string name="tituloGalaxia4">Galaxias Irregulares</string>
+    <string name="infoGalaxia4">Son galaxias sin forma espiral, lenticular ni elíptica. Algunas galaxias irregulares son pequeñas galaxias espirales distorsionadas por la gravedad de un vecino mayor.</string>
+
     <!--TODO Solor es para la pruebas, se debe de borrar-->
 
 
@@ -283,5 +297,18 @@
     <string name="resPlaneta6">Saturno</string>
     <string name="resPlaneta7">Urano</string>
     <string name="resPlaneta8">Neptuno</string>
+
+    <!--JUEGO TEXTO GENERAL-->
+    <string name="scoreLayout">Tu puntaje: </string>
+    <string name="scoreTitle">Juego finalizado</string>
+    <string name="scoreContent">Tu puntaje final es: </string>
+    <string name="scoreRest">Reiniciar el juego</string>
+    <string name="scoreEx">Salir</string>
+
+    <string name="scorePosYes">¡Felicidades! Ahora todos los planetas están en orden</string>
+    <string name="scorePosNo">¡Orden Incorrecto!, intente denuevo</string>
+
+    <string name="resYes">Correcto</string>
+    <string name="resNo">Incorrecto</string>
 
 </resources>

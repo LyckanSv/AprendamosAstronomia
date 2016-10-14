@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.callejas.cesar.aprendamosastronomia.GamePosPlaneta"
-    android:background="@color/deepPurple"
+    android:background="@color/primary"
     android:padding="5dp"
     >
     <LinearLayout
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Orden de planetas"
+            android:text="@string/juego4"
             style="@style/Titulo"
             android:textSize="35sp"
             android:textAlignment="center"
@@ -25,7 +25,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="250dp"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -35,8 +35,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textAlignment="center"
-                    android:textColor="#ffffff"
+                    style="@style/texto"
                     android:textSize="20sp"
                     android:id="@+id/listado"
                     />
@@ -44,107 +43,107 @@
             </LinearLayout>
 
         </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="10dp"
-            android:paddingRight="50dp"
-            android:paddingLeft="50dp"
-            android:paddingBottom="10dp"
-            >
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts1"
-                android:layout_alignParentLeft="true"
-                android:onClick="boton1"
-                android:src="@drawable/gamesaturno"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts3"
-                android:layout_below="@id/bts1"
-                android:layout_alignParentLeft="true"
-                android:onClick="boton3"
-                android:src="@drawable/gamemercurio"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts5"
-                android:layout_below="@id/bts3"
-                android:layout_alignParentLeft="true"
-                android:onClick="boton5"
-                android:src="@drawable/gamejupiter"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts7"
-                android:layout_below="@id/bts5"
-                android:layout_alignParentLeft="true"
-                android:onClick="boton7"
-                android:src="@drawable/gametierra"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts1"
+                        android:onClick="boton1"
+                        android:src="@drawable/gamesaturno"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
 
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts2"
-                android:layout_alignParentRight="true"
-                android:onClick="boton2"
-                android:src="@drawable/gamemartes"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts4"
-                android:layout_below="@id/bts1"
-                android:layout_alignParentRight="true"
-                android:onClick="boton4"
-                android:src="@drawable/gameurano"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts6"
-                android:layout_below="@id/bts3"
-                android:layout_alignParentRight="true"
-                android:onClick="boton6"
-                android:src="@drawable/gamevenus"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:id="@+id/bts8"
-                android:layout_below="@id/bts5"
-                android:layout_alignParentRight="true"
-                android:onClick="boton8"
-                android:src="@drawable/gameneptuno"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/deepPurple"
-                />
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts5"
+                        android:onClick="boton5"
+                        android:src="@drawable/gamejupiter"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
 
-        </RelativeLayout>
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts2"
+                        android:onClick="boton2"
+                        android:src="@drawable/gamemartes"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
 
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts6"
+                        android:onClick="boton6"
+                        android:src="@drawable/gamevenus"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
 
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts3"
+                        android:onClick="boton3"
+                        android:src="@drawable/gamemercurio"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
+
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts7"
+                        android:onClick="boton7"
+                        android:src="@drawable/gametierra"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
+
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts4"
+                        android:onClick="boton4"
+                        android:src="@drawable/gameurano"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
+
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/bts8"
+                        android:onClick="boton8"
+                        android:src="@drawable/gameneptuno"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/deepPurple"
+                        />
+                </LinearLayout>
+            </LinearLayout>
     </LinearLayout>
-
 </ScrollView>

@@ -20,9 +20,9 @@
     <string name="GalaxiaMenu">The Galaxies</string>
     <string name="juegosMenu">¡Play now!</string>
 
-    <string name="juego1">Which planet is?</string>
+    <string name="juego1">Which planet is this?</string>
     <string name="juego2">Moon Phases</string>
-    <string name="juego3">What type of galaxy is?</string>
+    <string name="juego3">What type of galaxy is this?</string>
     <string name="juego4">Sorts planets</string>
 
 
@@ -200,7 +200,20 @@
                             spiral, elliptical and irregular.
     </string>
 
-    <!--TODO Solor es para la pruebas, se debe de borrar-->
+    <string name="tituloGalaxia1">Spiral galaxies</string>
+    <string name="infoGalaxia1">They form a drawing like a whirlpool with spiral arms; the center is mainly composed of old stars and the arms are mainly composed of young stars.</string>
+
+    <string name="tituloGalaxia2">Elliptical galaxies</string>
+    <string name="infoGalaxia2">They are either circular or oval. This is the oldest type of galaxies found in the universe; they have very little interstellar gas and dust, and are composed mainly of old stars.</string>
+
+    <string name="tituloGalaxia3">Lenticular galaxies</string>
+    <string name="infoGalaxia3">A lenticular galaxy is the type of galaxy between an elliptical galaxy and a spiral galaxy. Lenticular galaxies are disk-shaped (like spiral galaxies) that have consumed or lost much or all their interstellar matter
+                                (like elliptical galaxies), and therefore lack spiral arms, although sometimes there is a certain amount of interstellar matter, especially dust.</string>
+
+    <string name="tituloGalaxia4">Irregular galaxies</string>
+    <string name="infoGalaxia4">They are formless galaxies, either spiral, elliptical or lenticular. Some irregular galaxies are small spiral galaxies distorted by the gravity of a larger neighbor.</string>
+
+        <!--TODO Solor es para la pruebas, se debe de borrar-->
 
 
     <string name="pregunta1">1</string>
@@ -232,7 +245,7 @@
     <string name="resLuna4">Last Quarter Half Moon</string>
 
     <string name="tituloGameGalaxias">Select the type of Galaxy belonging to the picture</string>
-    <string name="resGal1">Spiral Galaxies</string>
+    <string name="resGal1">Spiral Galaxy</string>
     <string name="resGal2">Elliptical Galaxy</string>
     <string name="resGal3">Lenticular Galaxy</string>
     <string name="resGal4">Irregular Galaxy</string>
@@ -246,5 +259,19 @@
     <string name="resPlaneta6">Saturn</string>
     <string name="resPlaneta7">Uranus</string>
     <string name="resPlaneta8">Neptune</string>
+
+
+    <!--JUEGO TEXTO GENERAL-->
+    <string name="scoreLayout">Your score: </string>
+    <string name="scoreTitle">Game Over</string>
+    <string name="scoreContent">Your final score is: </string>
+    <string name="scoreRest">Restart Game</string>
+    <string name="scoreEx">Exit Game</string>
+
+    <string name="scorePosYes">Congratulations! All the planets are in order now!</string>
+    <string name="scorePosNo">Wrong order! Try again!</string>
+
+    <string name="resYes">Correct</string>
+    <string name="resNo">Wrong</string>
 
 </resources>

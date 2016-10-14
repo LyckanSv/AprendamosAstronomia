@@ -89,7 +89,7 @@ public class GamePlaneta extends AppCompatActivity {
                     preguntasRealizadas[i] = false;
                     ids = i;
                     numeroPreguntas += 1;
-                    numpregunta.setText("Pregunta " + String.valueOf(numeroPreguntas));
+                    numpregunta.setText(getString(R.string.tituloGamePlanetas));
                     pregunta.setImageResource(imagen[i]);
                     constructorPreguntas(preguntas[(i)],respuestas[i]);
                 }
@@ -198,19 +198,19 @@ public class GamePlaneta extends AppCompatActivity {
     public void boton1(View view){
         if(numeroPreguntas==8){
             if(respuestas[ids] == b1.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
             overQuestions();
         } else {
 
             if (respuestas[ids] == b1.getText()) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
@@ -218,7 +218,7 @@ public class GamePlaneta extends AppCompatActivity {
                 selector();
 
             } else {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
                 over.start();
             }
@@ -228,19 +228,19 @@ public class GamePlaneta extends AppCompatActivity {
     public void boton2(View view){
         if(numeroPreguntas==8){
             if(respuestas[ids] == b2.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
             overQuestions();
         } else {
 
             if (respuestas[ids] == b2.getText()) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
@@ -248,7 +248,7 @@ public class GamePlaneta extends AppCompatActivity {
                 selector();
 
             } else {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
                 over.start();
             }
@@ -258,18 +258,18 @@ public class GamePlaneta extends AppCompatActivity {
     public void boton3(View view){
         if(numeroPreguntas==8){
             if(respuestas[ids] == b3.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
             overQuestions();
         } else {
             if (respuestas[ids] == b3.getText()) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
@@ -277,8 +277,9 @@ public class GamePlaneta extends AppCompatActivity {
                 selector();
 
             } else {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
+                over.start();
             }
         }
     }
@@ -286,25 +287,25 @@ public class GamePlaneta extends AppCompatActivity {
     public void boton4(View view){
         if(numeroPreguntas==8){
             if(respuestas[ids] == b4.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
             overQuestions();
         } else {
             if (respuestas[ids] == b4.getText()) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
                 puntaje.setText(String.valueOf(contadorPuntaje));
                 selector();
             } else {
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
                 over.start();
             }
@@ -314,11 +315,17 @@ public class GamePlaneta extends AppCompatActivity {
     public void overQuestions(){
         String puntaje = String.valueOf(contadorPuntaje);
         new AlertDialog.Builder(GamePlaneta.this)
-                .setTitle("Tu Puntaje")
-                .setMessage(puntaje)
-                .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
+                .setTitle(getString(R.string.scoreTitle))
+                .setMessage(getString(R.string.scoreContent)+puntaje)
+                .setPositiveButton(getText(R.string.scoreRest), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        GamePlaneta.this.recreate();
+                    }
+                })
+                .setNegativeButton(getText(R.string.scoreEx), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
                         GamePlaneta.this.finish();
                     }
                 })

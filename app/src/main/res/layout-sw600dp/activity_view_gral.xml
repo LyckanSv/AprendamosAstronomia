@@ -7,7 +7,7 @@
     tools:context="com.callejas.cesar.aprendamosastronomia.ViewGral"
     android:orientation="vertical"
     android:weightSum="10"
-    android:background="@color/primary"
+    android:background="@color/primary_dark"
     >
 
     <LinearLayout

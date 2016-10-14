@@ -41,7 +41,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton1(View view){
         bts1.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Saturno" + filas;
+        cadena = posicion +". "+ getString(R.string.resPlaneta6) + filas;
         listado.setText(listado.getText() + cadena);
         memoria += "F";
 
@@ -51,7 +51,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton2(View view){
         bts2.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Marte" + filas;
+        cadena = posicion +". " +getString(R.string.resPlaneta4) + filas;
         listado.setText(listado.getText() + cadena);
         memoria += "D";
 
@@ -61,7 +61,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton3(View view){
         bts3.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Mercurio" + filas;
+        cadena = posicion +". "+ getString(R.string.resPlaneta1)+ filas;
         listado.setText(listado.getText() + cadena);
         memoria += "A";
         comprobar();
@@ -70,7 +70,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton4(View view){
         bts4.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Urano"+ filas;
+        cadena = posicion +". "+ getString(R.string.resPlaneta7)+ filas;
         listado.setText(listado.getText() + cadena);
         memoria += "G";
 
@@ -80,7 +80,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton5(View view){
         bts5.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Jupiter" + filas;
+        cadena = posicion +". "+ getString(R.string.resPlaneta5) + filas;
         listado.setText(listado.getText() + cadena);
         memoria += "E";
 
@@ -90,7 +90,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton6(View view){
         bts6.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Venus" + filas;
+        cadena = posicion +". "+getString(R.string.resPlaneta2)+ filas;
         listado.setText(listado.getText() + cadena);
         memoria += "B";
         comprobar();
@@ -99,7 +99,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton7(View view){
         bts7.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Tierra" + filas;
+        cadena = posicion +". "+getString(R.string.resPlaneta3)+ filas;
         listado.setText(listado.getText() + cadena);
         memoria += "C";
         comprobar();
@@ -109,7 +109,7 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void boton8(View view){
         bts8.setEnabled(false);
         posicion += 1;
-        cadena = posicion +" Neptuno" + filas;
+        cadena = posicion +". "+getString(R.string.resPlaneta8) + filas;
         listado.setText(listado.getText() + cadena);
         memoria += "H";
 
@@ -119,28 +119,36 @@ public class GamePosPlaneta extends AppCompatActivity {
     public void comprobar(){
         if (posicion == 8){
             if ( memoria.equalsIgnoreCase("ABCDEFGH")){
-                //Toast toast = Toast.makeText(getApplicationContext(), "Es correcto", Toast.LENGTH_SHORT);
-                //toast.show();
                 new AlertDialog.Builder(GamePosPlaneta.this)
-                        .setTitle("Tu Puntaje")
-                        .setMessage("Resultado Correcto. ¡Felicidades!")
-                        .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
+                        .setTitle(getString(R.string.scoreTitle))
+                        .setMessage(getString(R.string.scorePosYes))
+                        .setPositiveButton(getText(R.string.scoreRest), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                GamePosPlaneta.this.recreate();
+                            }
+                        })
+                        .setNegativeButton(getText(R.string.scoreEx), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
                                 GamePosPlaneta.this.finish();
                             }
                         })
                         .show();
 
             }else{
-                //Toast toast = Toast.makeText(getApplicationContext(), "Respuesta incorrecta", Toast.LENGTH_SHORT);
-                //toast.show();
                 new AlertDialog.Builder(GamePosPlaneta.this)
-                        .setTitle("Tu Puntaje")
-                        .setMessage("Resultado Incorrecto! Intente denuevo")
-                        .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
+                        .setTitle(getString(R.string.scoreTitle))
+                        .setMessage(getString(R.string.scorePosNo))
+                        .setPositiveButton(getText(R.string.scoreRest), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                GamePosPlaneta.this.recreate();
+                            }
+                        })
+                        .setNegativeButton(getText(R.string.scoreEx), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
                                 GamePosPlaneta.this.finish();
                             }
                         })

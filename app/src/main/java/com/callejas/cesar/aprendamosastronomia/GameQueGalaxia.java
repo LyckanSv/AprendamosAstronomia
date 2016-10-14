@@ -166,19 +166,19 @@ public class GameQueGalaxia extends AppCompatActivity {
 
         if(numeroPreguntas==4){
             if(respuestas[ids] == b1.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
             overQuestions();
         } else {
 
             if(respuestas[ids] == b1.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
@@ -187,7 +187,7 @@ public class GameQueGalaxia extends AppCompatActivity {
 
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
                 over.start();
             }
@@ -199,12 +199,12 @@ public class GameQueGalaxia extends AppCompatActivity {
 
         if(numeroPreguntas==4){
             if(respuestas[ids] == b2.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
 
@@ -212,7 +212,7 @@ public class GameQueGalaxia extends AppCompatActivity {
         } else {
 
             if(respuestas[ids] == b2.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
@@ -221,7 +221,7 @@ public class GameQueGalaxia extends AppCompatActivity {
 
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
                 over.start();
             }
@@ -232,19 +232,19 @@ public class GameQueGalaxia extends AppCompatActivity {
         if(numeroPreguntas==4){
 
             if(respuestas[ids] == b3.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
 
             overQuestions();
         } else {
             if(respuestas[ids] == b3.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
@@ -253,8 +253,9 @@ public class GameQueGalaxia extends AppCompatActivity {
 
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
+                over.start();
             }
         }
     }
@@ -264,12 +265,12 @@ public class GameQueGalaxia extends AppCompatActivity {
         if(numeroPreguntas==4) {
 
             if(respuestas[ids] == b4.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 toast.show();
                 contadorPuntaje += 10;
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
             }
             overQuestions();
@@ -278,7 +279,7 @@ public class GameQueGalaxia extends AppCompatActivity {
         } else {
 
             if(respuestas[ids] == b4.getText() ){
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta correcta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resYes), Toast.LENGTH_SHORT);
                 wins.start();
                 toast.show();
                 contadorPuntaje += 10;
@@ -286,7 +287,7 @@ public class GameQueGalaxia extends AppCompatActivity {
                 selector();
             }
             else{
-                Toast toast = Toast.makeText(getApplicationContext(), "Pregunta incorrecta", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.resNo), Toast.LENGTH_SHORT);
                 toast.show();
                 over.start();
             }
@@ -296,11 +297,17 @@ public class GameQueGalaxia extends AppCompatActivity {
     public void overQuestions(){
         String puntaje = String.valueOf(contadorPuntaje);
         new AlertDialog.Builder(GameQueGalaxia.this)
-                .setTitle("Tu Puntaje")
-                .setMessage(puntaje)
-                .setNeutralButton("Aceptar y salir", new DialogInterface.OnClickListener() {
+                .setTitle(getString(R.string.scoreTitle))
+                .setMessage(getString(R.string.scoreContent)+puntaje)
+                .setPositiveButton(getText(R.string.scoreRest), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        GameQueGalaxia.this.recreate();
+                    }
+                })
+                .setNegativeButton(getText(R.string.scoreEx), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
                         GameQueGalaxia.this.finish();
                     }
                 })

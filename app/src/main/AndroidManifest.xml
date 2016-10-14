@@ -17,15 +17,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".ViewGral" />
-        <activity android:name=".GamePlaneta" />
+        <activity
+            android:name=".GamePlaneta"
+            android:screenOrientation="portrait" />
         <activity android:name=".View_satelites" />
         <activity android:name=".View_planetas" />
-        <activity android:name=".GameFasesLuna" />
-        <activity android:name=".GameQueGalaxia" />
-        <activity android:name=".GamePosPlaneta"></activity>
-
-        <activity android:name=".Game_mainMenu"></activity>
-
+        <activity
+            android:name=".GameFasesLuna"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameQueGalaxia"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GamePosPlaneta"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Game_mainMenu" />
+        <activity android:name=".View_galaxias"></activity>
     </application>
 
 </manifest>

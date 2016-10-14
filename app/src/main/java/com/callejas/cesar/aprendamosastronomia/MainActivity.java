@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         ingresoDatos = new appDatosG(getString(R.string.tituloNavesEspaciales),getString(R.string.navesEspacialesInfo),R.drawable.spaceshipsnew);
         datosGenerales.add(ingresoDatos);
 
-        ingresoDatos = new appDatosG(getString(R.string.tituloGalaxias),getString(R.string.galaxiasInfo),R.drawable.galaxiaespiral1);
-        datosGenerales.add(ingresoDatos);
     }
 
     public void sistemaSolar(View view){
@@ -90,8 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void galaxias(View view){
-        Intent intent = new Intent(this,ViewGral.class);
-        intent.putExtra("datos",datosGenerales.get(6));
+        Intent intent = new Intent(this,View_galaxias.class);
         startActivity(intent);
     }
 
