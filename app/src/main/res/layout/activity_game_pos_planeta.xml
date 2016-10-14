@@ -57,43 +57,31 @@
                     >
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts1"
                         android:onClick="boton1"
                         android:src="@drawable/gamesaturno"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts5"
                         android:onClick="boton5"
                         android:src="@drawable/gamejupiter"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts2"
                         android:onClick="boton2"
                         android:src="@drawable/gamemartes"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts6"
                         android:onClick="boton6"
                         android:src="@drawable/gamevenus"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
 
                 </LinearLayout>
@@ -105,43 +93,31 @@
                     android:gravity="center">
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts3"
                         android:onClick="boton3"
                         android:src="@drawable/gamemercurio"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts7"
                         android:onClick="boton7"
                         android:src="@drawable/gametierra"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts4"
                         android:onClick="boton4"
                         android:src="@drawable/gameurano"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
 
                     <ImageButton
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        style="@style/buttonGameImgP"
                         android:id="@+id/bts8"
                         android:onClick="boton8"
                         android:src="@drawable/gameneptuno"
-                        android:scaleType="fitCenter"
-                        android:backgroundTint="@color/deepPurple"
                         />
                 </LinearLayout>
             </LinearLayout>

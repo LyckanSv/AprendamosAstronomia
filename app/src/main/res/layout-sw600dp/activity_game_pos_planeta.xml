@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_pos_planeta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.callejas.cesar.aprendamosastronomia.GamePosPlaneta"
+    android:background="@color/primary"
+    android:padding="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/juego4"
+            style="@style/Titulo"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/texto"
+                    android:textSize="30sp"
+                    android:id="@+id/listado"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts1"
+                    android:onClick="boton1"
+                    android:src="@drawable/gamesaturno"
+                    />
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts5"
+                    android:onClick="boton5"
+                    android:src="@drawable/gamejupiter"
+                    />
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts2"
+                    android:onClick="boton2"
+                    android:src="@drawable/gamemartes"
+                    />
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts6"
+                    android:onClick="boton6"
+                    android:src="@drawable/gamevenus"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts3"
+                    android:onClick="boton3"
+                    android:src="@drawable/gamemercurio"
+                    />
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts7"
+                    android:onClick="boton7"
+                    android:src="@drawable/gametierra"
+                    />
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts4"
+                    android:onClick="boton4"
+                    android:src="@drawable/gameurano"
+                    />
+
+                <ImageButton
+                    style="@style/buttonGameImg"
+                    android:id="@+id/bts8"
+                    android:onClick="boton8"
+                    android:src="@drawable/gameneptuno"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

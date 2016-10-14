@@ -11,7 +11,7 @@
     <!--contenido-->
     <item android:bottom="3dp">
         <shape>
-            <solid android:color="@color/Focussedbutton1"/>
+            <solid android:color="@color/primary"/>
             <corners android:bottomLeftRadius="4dp"/>
         </shape>
     </item>
